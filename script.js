@@ -125,11 +125,17 @@ style.textContent = `
 document.head.appendChild(style);
 
 // Download app button functionality
-const downloadButtons = document.querySelectorAll('.btn-primary, .btn-download, .store-btn');
+const downloadButtons = document.querySelectorAll('.store-badge, .store-badge-mobile, .btn-store-nav, .store-btn');
 downloadButtons.forEach(button => {
     button.addEventListener('click', (e) => {
+        e.preventDefault();
+        
+        // Check if it's iOS or Android button
+        const isIOS = button.classList.contains('apple-store') || button.classList.contains('apple');
+        const platform = isIOS ? 'iOS (App Store)' : 'Android (Google Play)';
+        
         // In a real app, this would redirect to app store
-        alert('🐾 Thanks for your interest in PawMind! The app will be available soon on iOS and Android. 100% FREE, forever!');
+        alert(`🐾 Thanks for your interest in PawMind for ${platform}! The app will be available soon. 100% FREE, forever!`);
     });
 });
 
@@ -186,4 +192,279 @@ window.addEventListener('load', () => {
         document.body.style.opacity = '1';
     }, 100);
 });
+
+// Phone screen feature tabs
+const featureTabs = document.querySelectorAll('.feature-tab');
+const phoneScreen = document.querySelector('.screen-content');
+
+if (featureTabs.length > 0 && phoneScreen) {
+    // Store original screen content
+    const originalContent = phoneScreen.innerHTML;
+    
+    // Define different screen contents for each feature
+    const screenContents = {
+        home: originalContent,
+        health: `
+            <div class="status-bar">
+                <span class="time">9:41</span>
+                <div class="status-icons">
+                    <svg width="15" height="11" viewBox="0 0 15 11" fill="none">
+                        <rect x="0.5" y="0.5" width="4" height="10" rx="1" fill="currentColor"/>
+                        <rect x="5.5" y="2.5" width="4" height="8" rx="1" fill="currentColor" opacity="0.7"/>
+                        <rect x="10.5" y="4.5" width="4" height="6" rx="1" fill="currentColor" opacity="0.4"/>
+                    </svg>
+                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none">
+                        <rect x="0.5" y="0.5" width="15" height="10" rx="2" stroke="currentColor"/>
+                        <path d="M16.5 4V8C17.5 8 17.5 4 16.5 4Z" fill="currentColor"/>
+                        <rect x="2" y="2.5" width="11" height="7" rx="1" fill="currentColor"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="screen-header">
+                <h2 class="screen-title">Health Tracking</h2>
+                <button class="add-btn">+</button>
+            </div>
+            <div class="pet-card">
+                <h3 style="font-size: 0.9rem; margin-bottom: 15px;">Max's Health</h3>
+                <div class="pet-stats">
+                    <div class="stat-box">
+                        <span class="stat-label">Last Checkup</span>
+                        <span class="stat-value">2 weeks ago</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Next Vaccine</span>
+                        <span class="stat-value">In 3 months</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reminders-section">
+                <h4>Medical Records</h4>
+                <div class="reminder-item">
+                    <div class="reminder-icon">🏥</div>
+                    <div class="reminder-text">
+                        <span class="reminder-title">Annual Checkup</span>
+                        <span class="reminder-time">Completed - Dec 1, 2024</span>
+                    </div>
+                </div>
+                <div class="reminder-item">
+                    <div class="reminder-icon">💉</div>
+                    <div class="reminder-text">
+                        <span class="reminder-title">Rabies Vaccine</span>
+                        <span class="reminder-time">Due - March 15, 2025</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <div class="nav-item"><span>🏠</span></div>
+                <div class="nav-item active"><span>📊</span></div>
+                <div class="nav-item"><span>📸</span></div>
+                <div class="nav-item"><span>👤</span></div>
+            </div>
+        `,
+        expenses: `
+            <div class="status-bar">
+                <span class="time">9:41</span>
+                <div class="status-icons">
+                    <svg width="15" height="11" viewBox="0 0 15 11" fill="none">
+                        <rect x="0.5" y="0.5" width="4" height="10" rx="1" fill="currentColor"/>
+                        <rect x="5.5" y="2.5" width="4" height="8" rx="1" fill="currentColor" opacity="0.7"/>
+                        <rect x="10.5" y="4.5" width="4" height="6" rx="1" fill="currentColor" opacity="0.4"/>
+                    </svg>
+                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none">
+                        <rect x="0.5" y="0.5" width="15" height="10" rx="2" stroke="currentColor"/>
+                        <path d="M16.5 4V8C17.5 8 17.5 4 16.5 4Z" fill="currentColor"/>
+                        <rect x="2" y="2.5" width="11" height="7" rx="1" fill="currentColor"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="screen-header">
+                <h2 class="screen-title">Expenses</h2>
+                <button class="add-btn">+</button>
+            </div>
+            <div class="pet-card">
+                <h3 style="font-size: 0.9rem; margin-bottom: 10px;">This Month</h3>
+                <h2 style="font-size: 1.8rem; font-weight: 800; margin-bottom: 15px;">$248.50</h2>
+                <div class="pet-stats">
+                    <div class="stat-box">
+                        <span class="stat-label">Food</span>
+                        <span class="stat-value">$120</span>
+                    </div>
+                    <div class="stat-box">
+                        <span class="stat-label">Medical</span>
+                        <span class="stat-value">$85</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reminders-section">
+                <h4>Recent Expenses</h4>
+                <div class="reminder-item">
+                    <div class="reminder-icon">🍖</div>
+                    <div class="reminder-text">
+                        <span class="reminder-title">Dog Food</span>
+                        <span class="reminder-time">$45.00 - Today</span>
+                    </div>
+                </div>
+                <div class="reminder-item">
+                    <div class="reminder-icon">🎾</div>
+                    <div class="reminder-text">
+                        <span class="reminder-title">New Toys</span>
+                        <span class="reminder-time">$23.50 - Yesterday</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <div class="nav-item"><span>🏠</span></div>
+                <div class="nav-item active"><span>📊</span></div>
+                <div class="nav-item"><span>📸</span></div>
+                <div class="nav-item"><span>👤</span></div>
+            </div>
+        `,
+        reminders: `
+            <div class="status-bar">
+                <span class="time">9:41</span>
+                <div class="status-icons">
+                    <svg width="15" height="11" viewBox="0 0 15 11" fill="none">
+                        <rect x="0.5" y="0.5" width="4" height="10" rx="1" fill="currentColor"/>
+                        <rect x="5.5" y="2.5" width="4" height="8" rx="1" fill="currentColor" opacity="0.7"/>
+                        <rect x="10.5" y="4.5" width="4" height="6" rx="1" fill="currentColor" opacity="0.4"/>
+                    </svg>
+                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none">
+                        <rect x="0.5" y="0.5" width="15" height="10" rx="2" stroke="currentColor"/>
+                        <path d="M16.5 4V8C17.5 8 17.5 4 16.5 4Z" fill="currentColor"/>
+                        <rect x="2" y="2.5" width="11" height="7" rx="1" fill="currentColor"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="screen-header">
+                <h2 class="screen-title">Reminders</h2>
+                <button class="add-btn">+</button>
+            </div>
+            <div class="reminders-section" style="margin-top: 20px;">
+                <h4>Today</h4>
+                <div class="reminder-item">
+                    <div class="reminder-icon">💊</div>
+                    <div class="reminder-text">
+                        <span class="reminder-title">Medication</span>
+                        <span class="reminder-time">Today, 6:00 PM</span>
+                    </div>
+                </div>
+                <div class="reminder-item">
+                    <div class="reminder-icon">🍖</div>
+                    <div class="reminder-text">
+                        <span class="reminder-title">Dinner Time</span>
+                        <span class="reminder-time">Today, 7:30 PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="reminders-section" style="margin-top: 20px;">
+                <h4>Tomorrow</h4>
+                <div class="reminder-item">
+                    <div class="reminder-icon">🏥</div>
+                    <div class="reminder-text">
+                        <span class="reminder-title">Vet Checkup</span>
+                        <span class="reminder-time">Tomorrow, 10:00 AM</span>
+                    </div>
+                </div>
+                <div class="reminder-item">
+                    <div class="reminder-icon">🛁</div>
+                    <div class="reminder-text">
+                        <span class="reminder-title">Grooming</span>
+                        <span class="reminder-time">Tomorrow, 2:00 PM</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <div class="nav-item"><span>🏠</span></div>
+                <div class="nav-item"><span>📊</span></div>
+                <div class="nav-item active"><span>📸</span></div>
+                <div class="nav-item"><span>👤</span></div>
+            </div>
+        `,
+        memories: `
+            <div class="status-bar">
+                <span class="time">9:41</span>
+                <div class="status-icons">
+                    <svg width="15" height="11" viewBox="0 0 15 11" fill="none">
+                        <rect x="0.5" y="0.5" width="4" height="10" rx="1" fill="currentColor"/>
+                        <rect x="5.5" y="2.5" width="4" height="8" rx="1" fill="currentColor" opacity="0.7"/>
+                        <rect x="10.5" y="4.5" width="4" height="6" rx="1" fill="currentColor" opacity="0.4"/>
+                    </svg>
+                    <svg width="17" height="12" viewBox="0 0 17 12" fill="none">
+                        <rect x="0.5" y="0.5" width="15" height="10" rx="2" stroke="currentColor"/>
+                        <path d="M16.5 4V8C17.5 8 17.5 4 16.5 4Z" fill="currentColor"/>
+                        <rect x="2" y="2.5" width="11" height="7" rx="1" fill="currentColor"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="screen-header">
+                <h2 class="screen-title">Memories</h2>
+                <button class="add-btn">+</button>
+            </div>
+            <div class="pet-card">
+                <h3 style="font-size: 0.9rem; margin-bottom: 15px;">Max's Timeline</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 8px;">
+                    <div style="height: 80px; background: linear-gradient(135deg, #FFE5F0 0%, #FFD6E8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem;">📷</div>
+                    <div style="height: 80px; background: linear-gradient(135deg, #E8F8F0 0%, #D4F4E8 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem;">🎉</div>
+                    <div style="height: 80px; background: linear-gradient(135deg, #FFE5D6 0%, #FFD6C4 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem;">🐕</div>
+                    <div style="height: 80px; background: linear-gradient(135deg, #E5E8FF 0%, #D6DCFF 100%); border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 2rem;">❤️</div>
+                </div>
+            </div>
+            <div class="reminders-section">
+                <h4>Recent Moments</h4>
+                <div class="reminder-item">
+                    <div class="reminder-icon">🎂</div>
+                    <div class="reminder-text">
+                        <span class="reminder-title">Birthday Party</span>
+                        <span class="reminder-time">Dec 15, 2024</span>
+                    </div>
+                </div>
+                <div class="reminder-item">
+                    <div class="reminder-icon">🏖️</div>
+                    <div class="reminder-text">
+                        <span class="reminder-title">Beach Day</span>
+                        <span class="reminder-time">Nov 28, 2024</span>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <div class="nav-item"><span>🏠</span></div>
+                <div class="nav-item"><span>📊</span></div>
+                <div class="nav-item active"><span>📸</span></div>
+                <div class="nav-item"><span>👤</span></div>
+            </div>
+        `
+    };
+    
+    // Handle tab clicks
+    featureTabs.forEach(tab => {
+        tab.addEventListener('click', function() {
+            // Remove active class from all tabs
+            featureTabs.forEach(t => t.classList.remove('active'));
+            
+            // Add active class to clicked tab
+            this.classList.add('active');
+            
+            // Get screen type
+            const screenType = this.getAttribute('data-screen');
+            
+            // Fade out animation
+            phoneScreen.style.opacity = '0';
+            phoneScreen.style.transform = 'scale(0.95)';
+            
+            // Change content after fade out
+            setTimeout(() => {
+                phoneScreen.innerHTML = screenContents[screenType] || screenContents.home;
+                
+                // Fade in animation
+                setTimeout(() => {
+                    phoneScreen.style.opacity = '1';
+                    phoneScreen.style.transform = 'scale(1)';
+                }, 50);
+            }, 200);
+        });
+    });
+    
+    // Add smooth transition to phone screen
+    phoneScreen.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+}
 

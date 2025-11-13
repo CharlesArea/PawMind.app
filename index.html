@@ -58,7 +58,35 @@
             <li><a href="#about">About us</a></li>
             <li><a href="#features">Features</a></li>
           </ul>
-          <button class="btn-download">Download App</button>
+          <div class="nav-download-buttons">
+            <a href="#download" class="btn-store-nav apple">
+              <svg class="apple-logo" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"
+                />
+              </svg>
+            </a>
+            <a href="#download" class="btn-store-nav google">
+              <svg class="google-logo" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M3.609 7.896L12 2.488l8.391 5.408v8.208L12 21.512l-8.391-5.408V7.896z"
+                  fill="url(#google-gradient)"
+                />
+                <defs>
+                  <linearGradient
+                    id="google-gradient"
+                    x1="3.609"
+                    y1="7.896"
+                    x2="20.391"
+                    y2="16.104"
+                  >
+                    <stop offset="0%" stop-color="#00C6FF" />
+                    <stop offset="100%" stop-color="#0072FF" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </a>
+          </div>
           <button class="mobile-menu-btn" id="mobileMenuBtn">
             <span></span>
             <span></span>
@@ -73,7 +101,51 @@
       <ul>
         <li><a href="#about">About us</a></li>
         <li><a href="#features">Features</a></li>
-        <li><a href="#download">Download App</a></li>
+        <li class="mobile-menu-stores">
+          <a href="#download" class="store-badge-mobile apple-store">
+            <svg
+              class="badge-icon-mobile apple-icon"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+            >
+              <path
+                d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"
+              />
+            </svg>
+            <div class="badge-text-mobile">
+              <span class="badge-subtitle-mobile">Download on the</span>
+              <span class="badge-title-mobile">App Store</span>
+            </div>
+          </a>
+          <a href="#download" class="store-badge-mobile google-store">
+            <svg
+              class="badge-icon-mobile play-icon"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12 3.84 21.85c-.5-.24-.84-.76-.84-1.35z"
+                fill="#00D7FF"
+              />
+              <path
+                d="M16.81 15.12l-3.12-3.12-10.85 10c.15.07.32.11.5.11.21 0 .42-.05.61-.15l12.86-6.84z"
+                fill="#FFCE00"
+              />
+              <path
+                d="M20.16 10.65l-3.35-1.78-3.12 3.13 3.12 3.12 3.35-1.78c.52-.28.84-.82.84-1.35s-.32-1.07-.84-1.34z"
+                fill="#FF3A44"
+              />
+              <path
+                d="M3.84 2.15c-.5.24-.84.76-.84 1.35v.01L13.69 12l3.12-3.12L3.95 2.04c-.04-.01-.07-.03-.11-.04 0 .05 0 .1 0 .15z"
+                fill="#00F076"
+              />
+            </svg>
+            <div class="badge-text-mobile">
+              <span class="badge-subtitle-mobile">GET IT ON</span>
+              <span class="badge-title-mobile">Google Play</span>
+            </div>
+          </a>
+        </li>
       </ul>
     </div>
 
@@ -93,10 +165,51 @@
               possible.
             </p>
             <div class="hero-buttons">
-              <button class="btn-primary">
-                <span>Download for Free</span>
-                <span class="btn-arrow">→</span>
-              </button>
+              <a href="#download" class="store-badge apple-store">
+                <svg
+                  class="badge-icon apple-icon"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09l.01-.01zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"
+                  />
+                </svg>
+                <div class="badge-text">
+                  <span class="badge-subtitle">Download on the</span>
+                  <span class="badge-title">App Store</span>
+                </div>
+              </a>
+              <a href="#download" class="store-badge google-store">
+                <svg
+                  class="badge-icon play-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M3 20.5v-17c0-.59.34-1.11.84-1.35L13.69 12 3.84 21.85c-.5-.24-.84-.76-.84-1.35z"
+                    fill="#00D7FF"
+                  />
+                  <path
+                    d="M16.81 15.12l-3.12-3.12-10.85 10c.15.07.32.11.5.11.21 0 .42-.05.61-.15l12.86-6.84z"
+                    fill="#FFCE00"
+                  />
+                  <path
+                    d="M20.16 10.65l-3.35-1.78-3.12 3.13 3.12 3.12 3.35-1.78c.52-.28.84-.82.84-1.35s-.32-1.07-.84-1.34z"
+                    fill="#FF3A44"
+                  />
+                  <path
+                    d="M3.84 2.15c-.5.24-.84.76-.84 1.35v.01L13.69 12l3.12-3.12L3.95 2.04c-.04-.01-.07-.03-.11-.04 0 .05 0 .1 0 .15z"
+                    fill="#00F076"
+                  />
+                </svg>
+                <div class="badge-text">
+                  <span class="badge-subtitle">GET IT ON</span>
+                  <span class="badge-title">Google Play</span>
+                </div>
+              </a>
+            </div>
+            <div class="hero-learn-more">
               <button class="btn-secondary">
                 <span>Learn More</span>
               </button>
@@ -120,153 +233,180 @@
             </div>
           </div>
 
-          <div class="hero-phone">
-            <div class="phone-mockup">
-              <div class="phone-frame">
-                <div class="phone-notch"></div>
-                <div class="phone-screen">
-                  <div class="screen-content">
-                    <div class="status-bar">
-                      <span class="time">9:41</span>
-                      <div class="status-icons">
-                        <svg
-                          width="15"
-                          height="11"
-                          viewBox="0 0 15 11"
-                          fill="none"
-                        >
-                          <rect
-                            x="0.5"
-                            y="0.5"
-                            width="4"
-                            height="10"
-                            rx="1"
-                            fill="currentColor"
-                          />
-                          <rect
-                            x="5.5"
-                            y="2.5"
-                            width="4"
-                            height="8"
-                            rx="1"
-                            fill="currentColor"
-                            opacity="0.7"
-                          />
-                          <rect
-                            x="10.5"
-                            y="4.5"
-                            width="4"
-                            height="6"
-                            rx="1"
-                            fill="currentColor"
-                            opacity="0.4"
-                          />
-                        </svg>
-                        <svg
-                          width="17"
-                          height="12"
-                          viewBox="0 0 17 12"
-                          fill="none"
-                        >
-                          <rect
-                            x="0.5"
-                            y="0.5"
+          <div class="hero-phone-section">
+            <div class="phone-feature-tabs">
+              <button class="feature-tab active" data-screen="home">
+                <span class="tab-icon">🐶</span>
+                <span class="tab-label">Pet Profile</span>
+              </button>
+              <button class="feature-tab" data-screen="health">
+                <span class="tab-icon">❤️</span>
+                <span class="tab-label">Health</span>
+              </button>
+              <button class="feature-tab" data-screen="expenses">
+                <span class="tab-icon">💰</span>
+                <span class="tab-label">Expenses</span>
+              </button>
+              <button class="feature-tab" data-screen="reminders">
+                <span class="tab-icon">🗓️</span>
+                <span class="tab-label">Reminders</span>
+              </button>
+              <button class="feature-tab" data-screen="memories">
+                <span class="tab-icon">📸</span>
+                <span class="tab-label">Memories</span>
+              </button>
+            </div>
+
+            <div class="hero-phone">
+              <div class="phone-mockup">
+                <div class="phone-frame">
+                  <div class="phone-notch"></div>
+                  <div class="phone-screen">
+                    <div class="screen-content">
+                      <div class="status-bar">
+                        <span class="time">9:41</span>
+                        <div class="status-icons">
+                          <svg
                             width="15"
-                            height="10"
-                            rx="2"
-                            stroke="currentColor"
-                          />
-                          <path
-                            d="M16.5 4V8C17.5 8 17.5 4 16.5 4Z"
-                            fill="currentColor"
-                          />
-                          <rect
-                            x="2"
-                            y="2.5"
-                            width="11"
-                            height="7"
-                            rx="1"
-                            fill="currentColor"
-                          />
-                        </svg>
-                      </div>
-                    </div>
-
-                    <div class="screen-header">
-                      <h2 class="screen-title">My Pets</h2>
-                      <button class="add-btn">+</button>
-                    </div>
-
-                    <div class="pet-card">
-                      <div class="pet-card-header">
-                        <div class="pet-avatar">🐕</div>
-                        <div class="pet-info">
-                          <h3>Max</h3>
-                          <p>Golden Retriever • 3 years</p>
-                        </div>
-                        <div class="health-badge healthy">●</div>
-                      </div>
-                      <div class="pet-stats">
-                        <div class="stat-box">
-                          <span class="stat-label">Weight</span>
-                          <span class="stat-value">32 kg</span>
-                        </div>
-                        <div class="stat-box">
-                          <span class="stat-label">Vaccines</span>
-                          <span class="stat-value">Up to date</span>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="quick-actions-grid">
-                      <div class="quick-action-item">
-                        <div class="action-icon health">❤️</div>
-                        <span>Health</span>
-                      </div>
-                      <div class="quick-action-item">
-                        <div class="action-icon food">🍖</div>
-                        <span>Nutrition</span>
-                      </div>
-                      <div class="quick-action-item">
-                        <div class="action-icon activity">🎾</div>
-                        <span>Activity</span>
-                      </div>
-                      <div class="quick-action-item">
-                        <div class="action-icon calendar">📅</div>
-                        <span>Schedule</span>
-                      </div>
-                    </div>
-
-                    <div class="reminders-section">
-                      <h4>Upcoming</h4>
-                      <div class="reminder-item">
-                        <div class="reminder-icon">💊</div>
-                        <div class="reminder-text">
-                          <span class="reminder-title">Medication</span>
-                          <span class="reminder-time">Today, 6:00 PM</span>
+                            height="11"
+                            viewBox="0 0 15 11"
+                            fill="none"
+                          >
+                            <rect
+                              x="0.5"
+                              y="0.5"
+                              width="4"
+                              height="10"
+                              rx="1"
+                              fill="currentColor"
+                            />
+                            <rect
+                              x="5.5"
+                              y="2.5"
+                              width="4"
+                              height="8"
+                              rx="1"
+                              fill="currentColor"
+                              opacity="0.7"
+                            />
+                            <rect
+                              x="10.5"
+                              y="4.5"
+                              width="4"
+                              height="6"
+                              rx="1"
+                              fill="currentColor"
+                              opacity="0.4"
+                            />
+                          </svg>
+                          <svg
+                            width="17"
+                            height="12"
+                            viewBox="0 0 17 12"
+                            fill="none"
+                          >
+                            <rect
+                              x="0.5"
+                              y="0.5"
+                              width="15"
+                              height="10"
+                              rx="2"
+                              stroke="currentColor"
+                            />
+                            <path
+                              d="M16.5 4V8C17.5 8 17.5 4 16.5 4Z"
+                              fill="currentColor"
+                            />
+                            <rect
+                              x="2"
+                              y="2.5"
+                              width="11"
+                              height="7"
+                              rx="1"
+                              fill="currentColor"
+                            />
+                          </svg>
                         </div>
                       </div>
-                      <div class="reminder-item">
-                        <div class="reminder-icon">🏥</div>
-                        <div class="reminder-text">
-                          <span class="reminder-title">Vet Checkup</span>
-                          <span class="reminder-time">Tomorrow, 10:00 AM</span>
+
+                      <div class="screen-header">
+                        <h2 class="screen-title">My Pets</h2>
+                        <button class="add-btn">+</button>
+                      </div>
+
+                      <div class="pet-card">
+                        <div class="pet-card-header">
+                          <div class="pet-avatar">🐕</div>
+                          <div class="pet-info">
+                            <h3>Max</h3>
+                            <p>Golden Retriever • 3 years</p>
+                          </div>
+                          <div class="health-badge healthy">●</div>
+                        </div>
+                        <div class="pet-stats">
+                          <div class="stat-box">
+                            <span class="stat-label">Weight</span>
+                            <span class="stat-value">32 kg</span>
+                          </div>
+                          <div class="stat-box">
+                            <span class="stat-label">Vaccines</span>
+                            <span class="stat-value">Up to date</span>
+                          </div>
                         </div>
                       </div>
-                    </div>
 
-                    <div class="bottom-nav">
-                      <div class="nav-item active">
-                        <span>🏠</span>
+                      <div class="quick-actions-grid">
+                        <div class="quick-action-item">
+                          <div class="action-icon health">❤️</div>
+                          <span>Health</span>
+                        </div>
+                        <div class="quick-action-item">
+                          <div class="action-icon food">🍖</div>
+                          <span>Nutrition</span>
+                        </div>
+                        <div class="quick-action-item">
+                          <div class="action-icon activity">🎾</div>
+                          <span>Activity</span>
+                        </div>
+                        <div class="quick-action-item">
+                          <div class="action-icon calendar">📅</div>
+                          <span>Schedule</span>
+                        </div>
                       </div>
-                      <div class="nav-item">
-                        <span>📊</span>
+
+                      <div class="reminders-section">
+                        <h4>Upcoming</h4>
+                        <div class="reminder-item">
+                          <div class="reminder-icon">💊</div>
+                          <div class="reminder-text">
+                            <span class="reminder-title">Medication</span>
+                            <span class="reminder-time">Today, 6:00 PM</span>
+                          </div>
+                        </div>
+                        <div class="reminder-item">
+                          <div class="reminder-icon">🏥</div>
+                          <div class="reminder-text">
+                            <span class="reminder-title">Vet Checkup</span>
+                            <span class="reminder-time"
+                              >Tomorrow, 10:00 AM</span
+                            >
+                          </div>
+                        </div>
                       </div>
-                      <div class="nav-item">
-                        <span>📸</span>
-                      </div>
-                      <div class="nav-item">
-                        <span>👤</span>
+
+                      <div class="bottom-nav">
+                        <div class="nav-item active">
+                          <span>🏠</span>
+                        </div>
+                        <div class="nav-item">
+                          <span>📊</span>
+                        </div>
+                        <div class="nav-item">
+                          <span>📸</span>
+                        </div>
+                        <div class="nav-item">
+                          <span>👤</span>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -513,15 +653,13 @@
               <h4>Company</h4>
               <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
               </ul>
             </div>
             <div class="footer-column">
               <h4>Support</h4>
               <ul>
-                <li><a href="#help">Help Center</a></li>
-                <li><a href="#contact">Contact</a></li>
                 <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="delete-account.html">Delete Account</a></li>
               </ul>
             </div>
           </div>

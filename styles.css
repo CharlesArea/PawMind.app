@@ -84,19 +84,41 @@ body {
     color: var(--accent-color);
 }
 
-.btn-download {
-    padding: 12px 30px;
-    background: var(--white);
-    border: 2px solid var(--dark-color);
-    border-radius: 25px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s;
+.nav-download-buttons {
+    display: flex;
+    gap: 8px;
+    align-items: center;
 }
 
-.btn-download:hover {
-    background: var(--dark-color);
-    color: var(--white);
+.btn-store-nav {
+    width: 36px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #000000;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.btn-store-nav:hover {
+    background: #2a2a2a;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.apple-logo,
+.google-logo {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-store-nav.google .google-logo {
+    filter: brightness(0) invert(1);
 }
 
 .mobile-menu-btn {
@@ -145,6 +167,58 @@ body {
     text-decoration: none;
     color: var(--dark-color);
     font-weight: 500;
+}
+
+.mobile-menu-stores {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 10px 0;
+    border-bottom: none !important;
+}
+
+.store-badge-mobile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: #000000;
+    color: #ffffff;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.store-badge-mobile:hover {
+    background: #2a2a2a;
+}
+
+.badge-icon-mobile {
+    width: 26px;
+    height: 26px;
+    flex-shrink: 0;
+}
+
+.badge-text-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+
+.badge-subtitle-mobile {
+    font-size: 0.6rem;
+    font-weight: 400;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.badge-title-mobile {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-top: 1px;
 }
 
 /* Hero Section */
@@ -228,7 +302,65 @@ body {
 .hero-buttons {
     display: flex;
     gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.hero-learn-more {
     margin-bottom: 50px;
+}
+
+.store-badge {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 24px;
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    min-width: 180px;
+}
+
+.store-badge:hover {
+    background: #2a2a2a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.badge-icon {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.apple-icon {
+    color: #ffffff;
+}
+
+.badge-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+
+.badge-subtitle {
+    font-size: 0.65rem;
+    font-weight: 400;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+
+.badge-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1px;
 }
 
 .btn-primary {
@@ -308,6 +440,63 @@ body {
     width: 1px;
     height: 40px;
     background: var(--light-gray);
+}
+
+/* Phone Section with Tabs */
+.hero-phone-section {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.phone-feature-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.feature-tab {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 18px;
+    background: var(--white);
+    border: 2px solid transparent;
+    border-radius: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    min-width: 160px;
+}
+
+.feature-tab:hover {
+    border-color: var(--accent-color);
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(255, 182, 217, 0.3);
+}
+
+.feature-tab.active {
+    background: var(--gradient-1);
+    border-color: var(--accent-color);
+    transform: translateX(5px);
+    box-shadow: 0 6px 20px rgba(255, 182, 217, 0.4);
+}
+
+.tab-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.tab-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    text-align: left;
+}
+
+.feature-tab.active .tab-label {
+    color: var(--white);
 }
 
 /* Phone Mockup */
@@ -776,6 +965,10 @@ body {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 8px;
+    line-height: 1.3;
+    min-height: 3.9rem; /* Always 2 lines: 1.5rem × 1.3 × 2 */
+    display: flex;
+    align-items: flex-start;
 }
 
 .feature-content > p {
@@ -1158,6 +1351,213 @@ body {
     display: inline-flex;
 }
 
+/* Delete Account Page */
+.delete-account-page {
+    padding: 100px 0 80px;
+    background: linear-gradient(135deg, #FFFFFF 0%, #FFF5F9 50%, #FFE5F0 100%);
+    min-height: 100vh;
+}
+
+.delete-account-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.delete-icon {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+}
+
+.delete-account-content h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+
+.delete-intro {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+.delete-intro p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.delete-form-card {
+    background: var(--white);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.delete-form-card h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+}
+
+.form-description {
+    font-size: 1rem;
+    color: var(--gray);
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.delete-form {
+    margin-bottom: 40px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--dark-color);
+    margin-bottom: 10px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 1rem;
+    border: 2px solid var(--light-gray);
+    border-radius: 12px;
+    transition: all 0.3s;
+    font-family: 'Inter', sans-serif;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    box-shadow: 0 0 0 3px rgba(255, 182, 217, 0.1);
+}
+
+.btn-delete {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 18px 32px;
+    background: var(--dark-color);
+    color: var(--white);
+    border: none;
+    border-radius: 12px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-delete:hover {
+    background: #1a1a1a;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.btn-delete .btn-arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+
+.btn-delete:hover .btn-arrow {
+    transform: translateX(5px);
+}
+
+.delete-info {
+    background: var(--light-bg);
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.delete-info h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 20px;
+}
+
+.delete-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.delete-info li {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: var(--gray);
+}
+
+.info-icon {
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+
+.alternative-options {
+    background: var(--white);
+    border-radius: 24px;
+    padding: 40px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.alternative-options h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--dark-color);
+    margin-bottom: 15px;
+}
+
+.alternative-options p {
+    font-size: 1rem;
+    color: var(--gray);
+    margin-bottom: 25px;
+    line-height: 1.7;
+}
+
+.option-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.option-buttons .btn-secondary {
+    text-decoration: none;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
     .hero-content {
@@ -1185,6 +1585,34 @@ body {
         justify-content: center;
     }
 
+    .hero-phone-section {
+        flex-direction: column;
+    }
+
+    .phone-feature-tabs {
+        flex-direction: row;
+        overflow-x: auto;
+        width: 100%;
+        padding-bottom: 10px;
+    }
+
+    .feature-tab {
+        flex-direction: column;
+        gap: 8px;
+        padding: 12px 16px;
+        min-width: 100px;
+    }
+
+    .feature-tab:hover,
+    .feature-tab.active {
+        transform: translateY(-5px);
+    }
+
+    .tab-label {
+        font-size: 0.75rem;
+        text-align: center;
+    }
+
     .phone-mockup {
         transform: scale(0.9);
     }
@@ -1207,7 +1635,7 @@ body {
         display: none;
     }
 
-    .btn-download {
+    .nav-download-buttons {
         display: none;
     }
 
@@ -1232,10 +1660,16 @@ body {
         align-items: stretch;
     }
 
-    .btn-primary,
+    .hero-learn-more {
+        display: flex;
+        justify-content: center;
+    }
+
+    .store-badge,
     .btn-secondary {
         width: 100%;
         justify-content: center;
+        min-width: auto;
     }
 
     .hero-stats {
@@ -1305,6 +1739,27 @@ body {
     .privacy-section p,
     .privacy-section li {
         font-size: 0.95rem;
+    }
+
+    .delete-account-content h1 {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .delete-form-card,
+    .alternative-options {
+        padding: 25px;
+    }
+
+    .option-buttons {
+        flex-direction: column;
+    }
+
+    .option-buttons .btn-secondary {
+        width: 100%;
     }
 }
 
