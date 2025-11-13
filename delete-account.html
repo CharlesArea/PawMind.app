@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Account - PawMind</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="assets/android-chrome-512x512.png" />
+    
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="PawMind Logo" />
+            <span>PAWMIND</span>
+          </a>
+          <ul class="nav-links">
+            <li><a href="index.html#about">About us</a></li>
+            <li><a href="index.html#features">Features</a></li>
+          </ul>
+          <button class="btn-download" onclick="window.location.href='index.html#download'">Download App</button>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="index.html#about">About us</a></li>
+        <li><a href="index.html#features">Features</a></li>
+        <li><a href="index.html#download">Download App</a></li>
+      </ul>
+    </div>
+
+    <!-- Delete Account Content -->
+    <section class="delete-account-page">
+      <div class="container">
+        <div class="delete-account-content">
+          <div class="delete-icon">🔒</div>
+          <h1>Delete Your Account</h1>
+          <p class="subtitle">Your Privacy Matters to Us</p>
+
+          <div class="delete-intro">
+            <p>
+              At PawMind, we take data privacy extremely seriously – for you and your pet's family. We understand that sometimes you may need to remove your account and all associated data.
+            </p>
+            <p>
+              We're committed to protecting your personal information and respecting your right to control your data. If you wish to delete your account, we will permanently remove all your information from our systems.
+            </p>
+          </div>
+
+          <div class="delete-form-card">
+            <h2>Request Account Deletion</h2>
+            <p class="form-description">
+              Enter your email address below to submit a deletion request. We'll process your request within 30 days and confirm once your data has been completely removed.
+            </p>
+
+            <form id="deleteAccountForm" class="delete-form">
+              <div class="form-group">
+                <label for="userEmail">Your Account Email</label>
+                <input 
+                  type="email" 
+                  id="userEmail" 
+                  name="userEmail" 
+                  placeholder="Enter your email address"
+                  required
+                />
+              </div>
+
+              <button type="submit" class="btn-delete">
+                <span>Submit Deletion Request</span>
+                <span class="btn-arrow">→</span>
+              </button>
+            </form>
+
+            <div class="delete-info">
+              <h3>What Will Happen:</h3>
+              <ul>
+                <li>
+                  <span class="info-icon">📧</span>
+                  <span>Your email client will open with a pre-filled deletion request</span>
+                </li>
+                <li>
+                  <span class="info-icon">🗑️</span>
+                  <span>All your personal data and pet information will be permanently deleted</span>
+                </li>
+                <li>
+                  <span class="info-icon">📸</span>
+                  <span>All photos, documents, and records will be removed</span>
+                </li>
+                <li>
+                  <span class="info-icon">⏱️</span>
+                  <span>The process will be completed within 30 days</span>
+                </li>
+                <li>
+                  <span class="info-icon">✅</span>
+                  <span>You'll receive a confirmation email once the deletion is complete</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="alternative-options">
+            <h3>Need Help Instead?</h3>
+            <p>
+              If you're having issues with your account or have concerns, please consider reaching out to our support team first. We're here to help!
+            </p>
+            <div class="option-buttons">
+              <a href="mailto:support@pawmind.app" class="btn-secondary">
+                <span>Contact Support</span>
+              </a>
+              <a href="index.html" class="btn-secondary">
+                <span>← Back to Home</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="assets/logo.png" alt="PawMind Logo" />
+              <span>PAWMIND</span>
+            </div>
+            <p>Making pet care simple, smart, and joyful.</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Product</h4>
+              <ul>
+                <li><a href="index.html#features">Features</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#download">Download</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#help">Help Center</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+                <li><a href="delete-account.html">Delete Account</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 PawMind. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      // Handle delete account form submission
+      document.getElementById('deleteAccountForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const userEmail = document.getElementById('userEmail').value;
+        
+        // Compose email
+        const recipientEmail = 'contact@pawmind.app';
+        const subject = encodeURIComponent('Account Deletion Request - PawMind');
+        const body = encodeURIComponent(
+          `Hello PawMind Team,\n\n` +
+          `I would like to request the complete deletion of my account and all associated data.\n\n` +
+          `Account Email: ${userEmail}\n\n` +
+          `Please remove all my personal information, pet data, photos, documents, and records from your systems. I understand that this action is permanent and cannot be undone.\n\n` +
+          `Please confirm once the deletion process is complete.\n\n` +
+          `Thank you,\n` +
+          `${userEmail}`
+        );
+        
+        // Open email client
+        window.location.href = `mailto:${recipientEmail}?subject=${subject}&body=${body}`;
+        
+        // Show confirmation message
+        setTimeout(() => {
+          alert('📧 Your email client should now be open with the deletion request. Please send the email to complete your request.');
+        }, 500);
+      });
+    </script>
+  </body>
+</html>
+
