@@ -3,9 +3,502 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>PawMind - Your Pet's Companion App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <nav class="navbar">
+          <a href="index.html" class="logo">
+            <img src="assets/logo.png" alt="PawMind Logo" />
+            <span>PAWMIND</span>
+          </a>
+          <ul class="nav-links">
+            <li><a href="#about">About us</a></li>
+            <li><a href="#features">Features</a></li>
+          </ul>
+          <button class="btn-download">Download App</button>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+      <ul>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#download">Download App</a></li>
+      </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="hero-badge">
+              <span class="badge-icon">✨</span>
+              <span>100% Free Pet Care App</span>
+            </div>
+            <h1>Your Pet's Health & Happiness,<br />All in One Place</h1>
+            <p>
+              AI-powered insights, smart reminders, and comprehensive health
+              tracking. Everything you need to give your pet the best care
+              possible.
+            </p>
+            <div class="hero-buttons">
+              <button class="btn-primary">
+                <span>Download for Free</span>
+                <span class="btn-arrow">→</span>
+              </button>
+              <button class="btn-secondary">
+                <span>Learn More</span>
+              </button>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat-item">
+                <h3>50,000+</h3>
+                <p>Happy Pet Parents</p>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <h3>1M+</h3>
+                <p>Health Records Tracked</p>
+              </div>
+              <div class="stat-divider"></div>
+              <div class="stat-item">
+                <h3>24/7</h3>
+                <p>AI Health Advisor</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-phone">
+            <div class="phone-mockup">
+              <div class="phone-frame">
+                <div class="phone-notch"></div>
+                <div class="phone-screen">
+                  <div class="screen-content">
+                    <div class="status-bar">
+                      <span class="time">9:41</span>
+                      <div class="status-icons">
+                        <svg
+                          width="15"
+                          height="11"
+                          viewBox="0 0 15 11"
+                          fill="none"
+                        >
+                          <rect
+                            x="0.5"
+                            y="0.5"
+                            width="4"
+                            height="10"
+                            rx="1"
+                            fill="currentColor"
+                          />
+                          <rect
+                            x="5.5"
+                            y="2.5"
+                            width="4"
+                            height="8"
+                            rx="1"
+                            fill="currentColor"
+                            opacity="0.7"
+                          />
+                          <rect
+                            x="10.5"
+                            y="4.5"
+                            width="4"
+                            height="6"
+                            rx="1"
+                            fill="currentColor"
+                            opacity="0.4"
+                          />
+                        </svg>
+                        <svg
+                          width="17"
+                          height="12"
+                          viewBox="0 0 17 12"
+                          fill="none"
+                        >
+                          <rect
+                            x="0.5"
+                            y="0.5"
+                            width="15"
+                            height="10"
+                            rx="2"
+                            stroke="currentColor"
+                          />
+                          <path
+                            d="M16.5 4V8C17.5 8 17.5 4 16.5 4Z"
+                            fill="currentColor"
+                          />
+                          <rect
+                            x="2"
+                            y="2.5"
+                            width="11"
+                            height="7"
+                            rx="1"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </div>
+                    </div>
+
+                    <div class="screen-header">
+                      <h2 class="screen-title">My Pets</h2>
+                      <button class="add-btn">+</button>
+                    </div>
+
+                    <div class="pet-card">
+                      <div class="pet-card-header">
+                        <div class="pet-avatar">🐕</div>
+                        <div class="pet-info">
+                          <h3>Max</h3>
+                          <p>Golden Retriever • 3 years</p>
+                        </div>
+                        <div class="health-badge healthy">●</div>
+                      </div>
+                      <div class="pet-stats">
+                        <div class="stat-box">
+                          <span class="stat-label">Weight</span>
+                          <span class="stat-value">32 kg</span>
+                        </div>
+                        <div class="stat-box">
+                          <span class="stat-label">Vaccines</span>
+                          <span class="stat-value">Up to date</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="quick-actions-grid">
+                      <div class="quick-action-item">
+                        <div class="action-icon health">❤️</div>
+                        <span>Health</span>
+                      </div>
+                      <div class="quick-action-item">
+                        <div class="action-icon food">🍖</div>
+                        <span>Nutrition</span>
+                      </div>
+                      <div class="quick-action-item">
+                        <div class="action-icon activity">🎾</div>
+                        <span>Activity</span>
+                      </div>
+                      <div class="quick-action-item">
+                        <div class="action-icon calendar">📅</div>
+                        <span>Schedule</span>
+                      </div>
+                    </div>
+
+                    <div class="reminders-section">
+                      <h4>Upcoming</h4>
+                      <div class="reminder-item">
+                        <div class="reminder-icon">💊</div>
+                        <div class="reminder-text">
+                          <span class="reminder-title">Medication</span>
+                          <span class="reminder-time">Today, 6:00 PM</span>
+                        </div>
+                      </div>
+                      <div class="reminder-item">
+                        <div class="reminder-icon">🏥</div>
+                        <div class="reminder-text">
+                          <span class="reminder-title">Vet Checkup</span>
+                          <span class="reminder-time">Tomorrow, 10:00 AM</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="bottom-nav">
+                      <div class="nav-item active">
+                        <span>🏠</span>
+                      </div>
+                      <div class="nav-item">
+                        <span>📊</span>
+                      </div>
+                      <div class="nav-item">
+                        <span>📸</span>
+                      </div>
+                      <div class="nav-item">
+                        <span>👤</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-features">
+            <div class="feature-pill">
+              <span class="pill-icon">🧠</span>
+              <span>AI-Powered Health Insights</span>
+            </div>
+            <div class="feature-pill">
+              <span class="pill-icon">📱</span>
+              <span>Works on All Devices</span>
+            </div>
+            <div class="feature-pill">
+              <span class="pill-icon">🔒</span>
+              <span>Secure & Private</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Everything Your Pet Needs, All in One Place</h2>
+          <p>Completely free. Forever.</p>
+        </div>
+        <div class="feature-cards">
+          <div class="feature-card">
+            <div class="feature-image">
+              <div class="feature-img-placeholder pets-gradient">
+                <span class="feature-icon">🐶</span>
+              </div>
+            </div>
+            <div class="feature-content">
+              <span class="feature-badge">100% Free</span>
+              <h3>Pet Management, Simplified</h3>
+              <p class="feature-desc">
+                Add unlimited pets from cats and dogs to rabbits, birds,
+                reptiles, and fish. Store details like age, breed, weight, and
+                gender. Keep vaccination records, allergies, diet plans, and
+                health notes always up to date.
+              </p>
+              <button class="btn-explore">Learn More</button>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image">
+              <div class="feature-img-placeholder ai-gradient">
+                <span class="feature-icon">🧠</span>
+              </div>
+            </div>
+            <div class="feature-content">
+              <span class="feature-badge">100% Free</span>
+              <h3>AI-Powered Pet Health Advisor</h3>
+              <p class="feature-desc">
+                Powered by 1,000,000+ rows of real veterinary data. AI detects
+                potential health risks, provides early suggestions for common
+                diseases, and tracks trends over time. It's like having a
+                virtual vet that never sleeps.
+              </p>
+              <button class="btn-explore">Learn More</button>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image">
+              <div class="feature-img-placeholder expense-gradient">
+                <span class="feature-icon">💰</span>
+              </div>
+            </div>
+            <div class="feature-content">
+              <span class="feature-badge">100% Free</span>
+              <h3>Smart Expense Tracking</h3>
+              <p class="feature-desc">
+                Log expenses effortlessly with categories for food, medical,
+                grooming, toys, training, and travel. Visual charts help you
+                understand spending habits and set budgets. Save smarter. Care
+                better.
+              </p>
+              <button class="btn-explore">Learn More</button>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image">
+              <div class="feature-img-placeholder reminder-gradient">
+                <span class="feature-icon">🗓️</span>
+              </div>
+            </div>
+            <div class="feature-content">
+              <span class="feature-badge">100% Free</span>
+              <h3>Health & Reminder System</h3>
+              <p class="feature-desc">
+                Never miss what matters. Automatic reminders for vaccines,
+                deworming, grooming, and vet visits. Medication alerts and
+                feeding schedules. Sync with your calendar for peace of mind.
+              </p>
+              <button class="btn-explore">Learn More</button>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image">
+              <div class="feature-img-placeholder memory-gradient">
+                <span class="feature-icon">📸</span>
+              </div>
+            </div>
+            <div class="feature-content">
+              <span class="feature-badge">100% Free</span>
+              <h3>Memories That Last Forever</h3>
+              <p class="feature-desc">
+                Capture your pet's best photos and videos. Write journal entries
+                for special days. Auto-organize by timeline and pet name. Relive
+                memories anytime, beautifully.
+              </p>
+              <button class="btn-explore">Learn More</button>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-image">
+              <div class="feature-img-placeholder share-gradient">
+                <span class="feature-icon">📤</span>
+              </div>
+            </div>
+            <div class="feature-content">
+              <span class="feature-badge">100% Free</span>
+              <h3>Share Instantly with Family & Vets</h3>
+              <p class="feature-desc">
+                Send medical records or vaccination certificates with one tap.
+                Quick share via link or PDF. Cloud-sync keeps everything updated
+                across devices. Optional local-only mode for privacy.
+              </p>
+              <button class="btn-explore">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-content">
+          <div class="about-text">
+            <h2>About PawMind</h2>
+            <p>
+              We are a group of pet lovers, dedicated to providing the best for
+              our furry family members. As an old saying goes,
+            </p>
+            <p class="about-quote">
+              "We have everything else, but our pets only have us."
+            </p>
+            <p>
+              We strive to offer the best tools for both pets and their owners,
+              helping you keep track of your pet's health, memories, and
+              well-being. From weight tracking to vaccination records, from
+              precious photos to important documents, PawMind is here to support
+              you and your pet's journey together.
+            </p>
+            <p class="about-closing">
+              We hope you enjoy using PawMind as much as we enjoyed creating it
+              for you and your beloved pets. Thank you for being part of our pet
+              family! 🐾
+            </p>
+          </div>
+          <div class="about-visual">
+            <div class="floating-card card-1">
+              <span>🐕</span>
+              <p>Daily Walks<br /><strong>2.5 miles</strong></p>
+            </div>
+            <div class="floating-card card-2">
+              <span>💊</span>
+              <p>Medication<br /><strong>Due Today</strong></p>
+            </div>
+            <div class="floating-card card-3">
+              <span>🎉</span>
+              <p>Birthday<br /><strong>In 5 days</strong></p>
+            </div>
+            <div class="floating-card card-4">
+              <span>🐈</span>
+              <p>Vet Visit<br /><strong>Next Week</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta" id="download">
+      <div class="container">
+        <div class="cta-content">
+          <h2>Ready to Give Your Pet<br />The Best Care?</h2>
+          <p>Join thousands of pet parents who trust PawMind</p>
+          <div class="download-buttons">
+            <button class="store-btn app-store">
+              <span class="store-icon">🍎</span>
+              <div>
+                <small>Download on the</small>
+                <strong>App Store</strong>
+              </div>
+            </button>
+            <button class="store-btn google-play">
+              <span class="store-icon">▶️</span>
+              <div>
+                <small>GET IT ON</small>
+                <strong>Google Play</strong>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <div class="footer-logo">
+              <img src="assets/logo.png" alt="PawMind Logo" />
+              <span>PAWMIND</span>
+            </div>
+            <p>Making pet care simple, smart, and joyful.</p>
+          </div>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Product</h4>
+              <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#download">Download</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Company</h4>
+              <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4>Support</h4>
+              <ul>
+                <li><a href="#help">Help Center</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 PawMind. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
