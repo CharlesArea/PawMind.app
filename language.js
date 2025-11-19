@@ -1,7 +1,9 @@
 // Language Manager
 const LanguageManager = {
     currentLang: 'en',
-    translations: {
+    translations: {},
+    // Minimal fallback translations (English only)
+    fallbackTranslations: {
   "en": {
     "nav": {
       "about": "About us",
@@ -15,8 +17,8 @@ const LanguageManager = {
       "downloadButton": "Download for Free",
       "learnMore": "Learn More",
       "stats": {
-        "parents": "Happy Pet Parents",
-        "records": "Health Records Tracked",
+        "parents": "Happy Pet Parents with Loving Families",
+        "records": "Health Records Trained AI Model",
         "advisor": "AI Health Advisor"
       },
       "tabs": {
@@ -24,7 +26,8 @@ const LanguageManager = {
         "health": "Health",
         "expenses": "Expenses",
         "reminders": "Reminders",
-        "memories": "Memories"
+        "memories": "Memories",
+        "sharing": "Sharing"
       },
       "features": {
         "aiInsights": "AI-Powered Health Insights",
@@ -89,9 +92,13 @@ const LanguageManager = {
       "features": "Features",
       "about": "About",
       "download": "Download",
+      "contact": "Contact",
       "privacy": "Privacy Policy",
       "deleteAccount": "Delete Account",
       "copyright": "2025 PawMind. All rights reserved."
+    },
+    "scroll": {
+      "learningMore": "Learning More"
     }
   },
   "es": {
@@ -278,11 +285,16 @@ const LanguageManager = {
       "copyright": "2025 PawMind。保留所有权利。"
     }
   }
-},
+    },
     supportedLanguages: {
         'en': 'English',
         'es': 'Español',
-        'zh': '中文'
+        'de': 'Deutsch',
+        'fr': 'Français',
+        'ja': '日本語',
+        'ko': '한국어',
+        'zh-TW': '繁中',
+        'zh-CN': '簡中'
     },
 
     // Detect browser language
@@ -292,10 +304,14 @@ const LanguageManager = {
         
         // Map common language codes
         const langMap = {
-            'zh-cn': 'zh',
-            'zh-tw': 'zh',
-            'zh-hk': 'zh',
-            'zh': 'zh',
+            'zh-cn': 'zh-CN',
+            'zh-tw': 'zh-TW',
+            'zh-hk': 'zh-TW',
+            'zh': 'zh-CN',
+            'de': 'de',
+            'fr': 'fr',
+            'ja': 'ja',
+            'ko': 'ko',
             'es': 'es',
             'en': 'en'
         };
@@ -319,30 +335,100 @@ const LanguageManager = {
         return 'en'; // Default to English
     },
 
-    // Translations are now embedded, no need to load
+    // Load translations - try from JSON file first, fallback to embedded
     async loadTranslations() {
-        // Translations are already embedded in the object
+        // First try to load from JSON file (works with HTTP server)
+        try {
+            const response = await fetch('translations.json');
+            if (response.ok) {
+                const translations = await response.json();
+                if (translations && typeof translations === 'object') {
+                    this.translations = translations;
+                    console.log('Translations loaded from translations.json');
+                    console.log(`Loaded ${Object.keys(this.translations).length} languages:`, Object.keys(this.translations));
+                    return true;
+                }
+            }
+        } catch (error) {
+            // File:// protocol doesn't allow fetch, so we'll use embedded translations
+            console.log('Cannot load from JSON file (file:// protocol), using embedded translations');
+        }
+        
+        // Use embedded translations (works with file:// protocol)
+        // Import all translations from the JSON file content
+        this.translations = this.getAllEmbeddedTranslations();
         console.log('Using embedded translations');
+        console.log(`Loaded ${Object.keys(this.translations).length} languages:`, Object.keys(this.translations));
         return true;
+    },
+    
+    // Get all embedded translations (includes all languages from translations.json)
+    getAllEmbeddedTranslations() {
+        // Try to get from window (loaded by translations_embedded.js)
+        if (window.EMBEDDED_TRANSLATIONS) {
+            return window.EMBEDDED_TRANSLATIONS;
+        }
+        
+        // Otherwise, use fallback (only has en and es)
+        console.warn('Using limited fallback translations. translations_embedded.js not loaded.');
+        return this.fallbackTranslations;
     },
 
     // Get translation by key path
     getTranslation(keyPath) {
+        // Check if translations are loaded
+        if (!this.translations || Object.keys(this.translations).length === 0) {
+            console.warn('Translations not loaded yet, using fallback');
+            // Try to use fallback translations
+            if (this.fallbackTranslations && this.fallbackTranslations[this.currentLang]) {
+                const keys = keyPath.split('.');
+                let value = this.fallbackTranslations[this.currentLang];
+                for (const key of keys) {
+                    if (value && value[key] !== undefined) {
+                        value = value[key];
+                    } else {
+                        // Fallback to English
+                        value = this.fallbackTranslations['en'];
+                        for (const k of keys) {
+                            if (value && value[k] !== undefined) {
+                                value = value[k];
+                            } else {
+                                return keyPath;
+                            }
+                        }
+                        break;
+                    }
+                }
+                return value;
+            }
+            return keyPath;
+        }
+        
         const keys = keyPath.split('.');
         let value = this.translations[this.currentLang];
+        
+        // If current language not found, try fallback
+        if (!value) {
+            console.warn(`Translation for language '${this.currentLang}' not found, falling back to English`);
+            value = this.translations['en'];
+        }
         
         for (const key of keys) {
             if (value && value[key] !== undefined) {
                 value = value[key];
             } else {
                 // Fallback to English if translation not found
-                value = this.translations['en'];
-                for (const k of keys) {
-                    if (value && value[k] !== undefined) {
-                        value = value[k];
-                    } else {
-                        return keyPath; // Return key if not found
+                if (this.translations['en']) {
+                    value = this.translations['en'];
+                    for (const k of keys) {
+                        if (value && value[k] !== undefined) {
+                            value = value[k];
+                        } else {
+                            return keyPath; // Return key if not found
+                        }
                     }
+                } else {
+                    return keyPath;
                 }
                 break;
             }
@@ -357,10 +443,22 @@ const LanguageManager = {
         const elements = document.querySelectorAll('[data-translate]');
         
         console.log(`Applying translations to ${elements.length} elements`);
+        console.log(`Current language: ${this.currentLang}`);
+        console.log(`Available translations:`, this.translations ? Object.keys(this.translations) : 'none');
+        
+        if (!this.translations || !this.translations[this.currentLang]) {
+            console.error(`Translations for '${this.currentLang}' not available!`);
+            console.log('Available languages:', this.translations ? Object.keys(this.translations) : 'none');
+            return;
+        }
         
         elements.forEach(element => {
             const key = element.getAttribute('data-translate');
             const translation = this.getTranslation(key);
+            
+            if (!translation || translation === key) {
+                console.warn(`Translation not found for key: ${key} in language: ${this.currentLang}`);
+            }
             
             // Check if element should use innerHTML or textContent
             if (element.hasAttribute('data-translate-html')) {
@@ -382,8 +480,23 @@ const LanguageManager = {
     // Change language
     async changeLanguage(langCode) {
         if (this.supportedLanguages[langCode]) {
+            // Verify the language exists in translations
+            if (!this.translations[langCode]) {
+                console.warn(`Language '${langCode}' not found in translations`);
+                // Try to reload translations
+                await this.loadTranslations();
+                if (!this.translations[langCode]) {
+                    console.error(`Language '${langCode}' still not found after reload`);
+                    return false;
+                }
+            }
             this.currentLang = langCode;
             this.applyTranslations();
+            
+            // Update URL parameter without page reload
+            const url = new URL(window.location);
+            url.searchParams.set('lang', langCode);
+            window.history.replaceState({}, '', url);
             
             // Update language switcher UI
             this.updateLanguageSwitcher();
@@ -413,18 +526,45 @@ const LanguageManager = {
         }
 
         console.log('Translations loaded:', Object.keys(this.translations));
+        console.log('Available languages:', Object.keys(this.translations));
 
-        // Check for saved language preference
-        const savedLang = localStorage.getItem('pawmind-language');
+        // Check for language in URL parameter first (for hreflang support)
+        const urlParams = new URLSearchParams(window.location.search);
+        const urlLang = urlParams.get('lang');
         
-        if (savedLang && this.supportedLanguages[savedLang]) {
-            this.currentLang = savedLang;
-            console.log('Using saved language:', savedLang);
+        // Map URL lang codes to internal codes
+        const urlLangMap = {
+            'zh-Hant': 'zh-TW',
+            'zh-Hans': 'zh-CN',
+            'zh': 'zh-CN' // Default Chinese to Simplified
+        };
+        
+        const mappedLang = urlLangMap[urlLang] || urlLang;
+        
+        if (urlLang && this.supportedLanguages[mappedLang]) {
+            this.currentLang = mappedLang;
+            console.log('Using language from URL parameter:', urlLang, '->', mappedLang);
+            // Save to localStorage when set via URL
+            localStorage.setItem('pawmind-language', mappedLang);
         } else {
-            // Detect browser language
-            const detectedLang = this.detectLanguage();
-            this.currentLang = detectedLang;
-            console.log('Detected browser language:', navigator.language, '-> Using:', detectedLang);
+            // Check for saved language preference
+            const savedLang = localStorage.getItem('pawmind-language');
+            
+            if (savedLang && this.supportedLanguages[savedLang]) {
+                this.currentLang = savedLang;
+                console.log('Using saved language:', savedLang);
+            } else {
+                // Detect browser language
+                const detectedLang = this.detectLanguage();
+                this.currentLang = detectedLang;
+                console.log('Detected browser language:', navigator.language, '-> Using:', detectedLang);
+            }
+        }
+
+        // Verify the current language exists in translations
+        if (!this.translations[this.currentLang]) {
+            console.warn(`Language '${this.currentLang}' not found in translations, falling back to English`);
+            this.currentLang = 'en';
         }
 
         // Apply translations

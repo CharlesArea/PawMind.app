@@ -139,16 +139,18 @@ downloadButtons.forEach(button => {
     });
 });
 
-// Learn More button (secondary button in hero)
-const learnMoreBtn = document.querySelector('.btn-secondary');
-if (learnMoreBtn) {
-    learnMoreBtn.addEventListener('click', () => {
+// Scroll indicator click handler
+const scrollIndicator = document.querySelector('.hero-scroll-indicator');
+if (scrollIndicator) {
+    scrollIndicator.addEventListener('click', () => {
         // Scroll to features section
         const featuresSection = document.querySelector('#features');
         if (featuresSection) {
             featuresSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
     });
+    // Add cursor pointer style
+    scrollIndicator.style.cursor = 'pointer';
 }
 
 // Feature explore buttons functionality
@@ -204,7 +206,8 @@ if (featureTabs.length > 0 && phoneScreenImage) {
         health: 'assets/mobile_mockup/Health.png',
         expenses: 'assets/mobile_mockup/Expense.png',
         reminders: 'assets/mobile_mockup/Reminders.png',
-        memories: 'assets/mobile_mockup/Memories.png'
+        memories: 'assets/mobile_mockup/Memories.png',
+        sharing: 'assets/mobile_mockup/Sharing.png'
     };
     
     // Handle tab clicks

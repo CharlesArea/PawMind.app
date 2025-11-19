@@ -44,6 +44,25 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Hreflang tags for multilingual SEO -->
+    <link rel="alternate" hreflang="en" href="https://pawmind.app/?lang=en" />
+    <link rel="alternate" hreflang="es" href="https://pawmind.app/?lang=es" />
+    <link rel="alternate" hreflang="de" href="https://pawmind.app/?lang=de" />
+    <link rel="alternate" hreflang="fr" href="https://pawmind.app/?lang=fr" />
+    <link rel="alternate" hreflang="ja" href="https://pawmind.app/?lang=ja" />
+    <link rel="alternate" hreflang="ko" href="https://pawmind.app/?lang=ko" />
+    <link
+      rel="alternate"
+      hreflang="zh-Hant"
+      href="https://pawmind.app/?lang=zh-TW"
+    />
+    <link
+      rel="alternate"
+      hreflang="zh-Hans"
+      href="https://pawmind.app/?lang=zh-CN"
+    />
+    <link rel="alternate" hreflang="x-default" href="https://pawmind.app" />
   </head>
   <body>
     <!-- Hero Container with Header -->
@@ -60,6 +79,9 @@
               <li><a href="#about" data-translate="nav.about">About us</a></li>
               <li>
                 <a href="#features" data-translate="nav.features">Features</a>
+              </li>
+              <li>
+                <a href="contact.html" data-translate="nav.contact">Contact</a>
               </li>
             </ul>
             <div class="nav-right-group">
@@ -78,9 +100,29 @@
                     <span class="lang-flag">🇪🇸</span>
                     <span>Español</span>
                   </div>
-                  <div class="lang-option" data-lang="zh">
+                  <div class="lang-option" data-lang="de">
+                    <span class="lang-flag">🇩🇪</span>
+                    <span>Deutsch</span>
+                  </div>
+                  <div class="lang-option" data-lang="fr">
+                    <span class="lang-flag">🇫🇷</span>
+                    <span>Français</span>
+                  </div>
+                  <div class="lang-option" data-lang="ja">
+                    <span class="lang-flag">🇯🇵</span>
+                    <span>日本語</span>
+                  </div>
+                  <div class="lang-option" data-lang="ko">
+                    <span class="lang-flag">🇰🇷</span>
+                    <span>한국어</span>
+                  </div>
+                  <div class="lang-option" data-lang="zh-TW">
+                    <span class="lang-flag">🇹🇼</span>
+                    <span>繁中</span>
+                  </div>
+                  <div class="lang-option" data-lang="zh-CN">
                     <span class="lang-flag">🇨🇳</span>
-                    <span>中文</span>
+                    <span>簡中</span>
                   </div>
                 </div>
               </div>
@@ -106,6 +148,9 @@
           <li><a href="#about" data-translate="nav.about">About us</a></li>
           <li>
             <a href="#features" data-translate="nav.features">Features</a>
+          </li>
+          <li>
+            <a href="contact.html" data-translate="nav.contact">Contact</a>
           </li>
           <li class="mobile-menu-stores">
             <a href="#download" class="store-badge-mobile apple-store">
@@ -233,27 +278,22 @@
                   </div>
                 </a>
               </div>
-              <div class="hero-learn-more">
-                <button class="btn-secondary">
-                  <span data-translate="hero.learnMore">Learn More</span>
-                </button>
-              </div>
 
               <div class="hero-stats">
                 <div class="stat-item">
-                  <h3>50,000+</h3>
-                  <p>Happy Pet Parents</p>
+                  <h3>8,821+</h3>
+                  <p data-translate="hero.stats.parents">
+                    Happy Pet Parents with Loving Families
+                  </p>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat-item">
                   <h3>1M+</h3>
-                  <p>Health Records Tracked</p>
+                  <p data-translate="hero.stats.records">
+                    Health Records Trained AI Model
+                  </p>
                 </div>
                 <div class="stat-divider"></div>
-                <div class="stat-item">
-                  <h3>24/7</h3>
-                  <p>AI Health Advisor</p>
-                </div>
               </div>
             </div>
 
@@ -261,23 +301,39 @@
               <div class="phone-feature-tabs">
                 <button class="feature-tab active" data-screen="home">
                   <span class="tab-icon">🐶</span>
-                  <span class="tab-label">Pet Profile</span>
+                  <span class="tab-label" data-translate="hero.tabs.profile"
+                    >Pet Profile</span
+                  >
                 </button>
                 <button class="feature-tab" data-screen="health">
                   <span class="tab-icon">❤️</span>
-                  <span class="tab-label">Health</span>
+                  <span class="tab-label" data-translate="hero.tabs.health"
+                    >Health</span
+                  >
                 </button>
                 <button class="feature-tab" data-screen="expenses">
                   <span class="tab-icon">💰</span>
-                  <span class="tab-label">Expenses</span>
+                  <span class="tab-label" data-translate="hero.tabs.expenses"
+                    >Expenses</span
+                  >
                 </button>
                 <button class="feature-tab" data-screen="reminders">
                   <span class="tab-icon">🗓️</span>
-                  <span class="tab-label">Reminders</span>
+                  <span class="tab-label" data-translate="hero.tabs.reminders"
+                    >Reminders</span
+                  >
                 </button>
                 <button class="feature-tab" data-screen="memories">
                   <span class="tab-icon">📸</span>
-                  <span class="tab-label">Memories</span>
+                  <span class="tab-label" data-translate="hero.tabs.memories"
+                    >Memories</span
+                  >
+                </button>
+                <button class="feature-tab" data-screen="sharing">
+                  <span class="tab-icon">📤</span>
+                  <span class="tab-label" data-translate="hero.tabs.sharing"
+                    >Sharing</span
+                  >
                 </button>
               </div>
 
@@ -292,22 +348,17 @@
                 </div>
               </div>
             </div>
-
-            <div class="hero-features">
-              <div class="feature-pill">
-                <span class="pill-icon">🧠</span>
-                <span>AI-Powered Health Insights</span>
-              </div>
-              <div class="feature-pill">
-                <span class="pill-icon">📱</span>
-                <span>Works on All Devices</span>
-              </div>
-              <div class="feature-pill">
-                <span class="pill-icon">🔒</span>
-                <span>Secure & Private</span>
-              </div>
-            </div>
           </div>
+        </div>
+        <div class="hero-scroll-indicator">
+          <div class="scroll-arrows">
+            <span class="scroll-arrow">↓</span>
+            <span class="scroll-arrow">↓</span>
+            <span class="scroll-arrow">↓</span>
+          </div>
+          <p class="scroll-text" data-translate="scroll.learningMore">
+            Learning More
+          </p>
         </div>
       </section>
     </div>
@@ -316,8 +367,10 @@
     <section class="features" id="features">
       <div class="container">
         <div class="section-header">
-          <h2>Everything Your Pet Needs, All in One Place</h2>
-          <p>Completely free. Forever.</p>
+          <h2 data-translate="features.title">
+            Everything Your Pet Needs, All in One Place
+          </h2>
+          <p data-translate="features.subtitle">Completely free. Forever.</p>
         </div>
         <div class="feature-cards">
           <div class="feature-card">
@@ -327,15 +380,24 @@
               </div>
             </div>
             <div class="feature-content">
-              <span class="feature-badge">100% Free</span>
-              <h3>Pet Management, Simplified</h3>
-              <p class="feature-desc">
+              <span class="feature-badge" data-translate="features.badge"
+                >100% Free</span
+              >
+              <h3 data-translate="features.petManagement.title">
+                Pet Management, Simplified
+              </h3>
+              <p
+                class="feature-desc"
+                data-translate="features.petManagement.description"
+              >
                 Add unlimited pets from cats and dogs to rabbits, birds,
                 reptiles, and fish. Store details like age, breed, weight, and
                 gender. Keep vaccination records, allergies, diet plans, and
                 health notes always up to date.
               </p>
-              <button class="btn-explore">Learn More</button>
+              <button class="btn-explore" data-translate="features.learnMore">
+                Learn More
+              </button>
             </div>
           </div>
 
@@ -346,15 +408,24 @@
               </div>
             </div>
             <div class="feature-content">
-              <span class="feature-badge">100% Free</span>
-              <h3>AI-Powered Pet Health Advisor</h3>
-              <p class="feature-desc">
+              <span class="feature-badge" data-translate="features.badge"
+                >100% Free</span
+              >
+              <h3 data-translate="features.aiHealth.title">
+                AI-Powered Pet Health Advisor
+              </h3>
+              <p
+                class="feature-desc"
+                data-translate="features.aiHealth.description"
+              >
                 Powered by 1,000,000+ rows of real veterinary data. AI detects
                 potential health risks, provides early suggestions for common
                 diseases, and tracks trends over time. It's like having a
                 virtual vet that never sleeps.
               </p>
-              <button class="btn-explore">Learn More</button>
+              <button class="btn-explore" data-translate="features.learnMore">
+                Learn More
+              </button>
             </div>
           </div>
 
@@ -365,15 +436,24 @@
               </div>
             </div>
             <div class="feature-content">
-              <span class="feature-badge">100% Free</span>
-              <h3>Smart Expense Tracking</h3>
-              <p class="feature-desc">
+              <span class="feature-badge" data-translate="features.badge"
+                >100% Free</span
+              >
+              <h3 data-translate="features.expenses.title">
+                Smart Expense Tracking
+              </h3>
+              <p
+                class="feature-desc"
+                data-translate="features.expenses.description"
+              >
                 Log expenses effortlessly with categories for food, medical,
                 grooming, toys, training, and travel. Visual charts help you
                 understand spending habits and set budgets. Save smarter. Care
                 better.
               </p>
-              <button class="btn-explore">Learn More</button>
+              <button class="btn-explore" data-translate="features.learnMore">
+                Learn More
+              </button>
             </div>
           </div>
 
@@ -384,14 +464,23 @@
               </div>
             </div>
             <div class="feature-content">
-              <span class="feature-badge">100% Free</span>
-              <h3>Health & Reminder System</h3>
-              <p class="feature-desc">
+              <span class="feature-badge" data-translate="features.badge"
+                >100% Free</span
+              >
+              <h3 data-translate="features.reminders.title">
+                Health & Reminder System
+              </h3>
+              <p
+                class="feature-desc"
+                data-translate="features.reminders.description"
+              >
                 Never miss what matters. Automatic reminders for vaccines,
                 deworming, grooming, and vet visits. Medication alerts and
                 feeding schedules. Sync with your calendar for peace of mind.
               </p>
-              <button class="btn-explore">Learn More</button>
+              <button class="btn-explore" data-translate="features.learnMore">
+                Learn More
+              </button>
             </div>
           </div>
 
@@ -402,14 +491,23 @@
               </div>
             </div>
             <div class="feature-content">
-              <span class="feature-badge">100% Free</span>
-              <h3>Memories That Last Forever</h3>
-              <p class="feature-desc">
+              <span class="feature-badge" data-translate="features.badge"
+                >100% Free</span
+              >
+              <h3 data-translate="features.memories.title">
+                Memories That Last Forever
+              </h3>
+              <p
+                class="feature-desc"
+                data-translate="features.memories.description"
+              >
                 Capture your pet's best photos and videos. Write journal entries
                 for special days. Auto-organize by timeline and pet name. Relive
                 memories anytime, beautifully.
               </p>
-              <button class="btn-explore">Learn More</button>
+              <button class="btn-explore" data-translate="features.learnMore">
+                Learn More
+              </button>
             </div>
           </div>
 
@@ -420,14 +518,23 @@
               </div>
             </div>
             <div class="feature-content">
-              <span class="feature-badge">100% Free</span>
-              <h3>Share Instantly with Family & Vets</h3>
-              <p class="feature-desc">
+              <span class="feature-badge" data-translate="features.badge"
+                >100% Free</span
+              >
+              <h3 data-translate="features.share.title">
+                Share Instantly with Family & Vets
+              </h3>
+              <p
+                class="feature-desc"
+                data-translate="features.share.description"
+              >
                 Send medical records or vaccination certificates with one tap.
                 Quick share via link or PDF. Cloud-sync keeps everything updated
                 across devices. Optional local-only mode for privacy.
               </p>
-              <button class="btn-explore">Learn More</button>
+              <button class="btn-explore" data-translate="features.learnMore">
+                Learn More
+              </button>
             </div>
           </div>
         </div>
@@ -439,22 +546,22 @@
       <div class="container">
         <div class="about-content">
           <div class="about-text">
-            <h2>About PawMind</h2>
-            <p>
+            <h2 data-translate="about.title">About PawMind</h2>
+            <p data-translate="about.intro">
               We are a group of pet lovers, dedicated to providing the best for
               our furry family members. As an old saying goes,
             </p>
-            <p class="about-quote">
+            <p class="about-quote" data-translate="about.quote">
               "We have everything else, but our pets only have us."
             </p>
-            <p>
+            <p data-translate="about.description">
               We strive to offer the best tools for both pets and their owners,
               helping you keep track of your pet's health, memories, and
               well-being. From weight tracking to vaccination records, from
               precious photos to important documents, PawMind is here to support
               you and your pet's journey together.
             </p>
-            <p class="about-closing">
+            <p class="about-closing" data-translate="about.closing">
               We hope you enjoy using PawMind as much as we enjoyed creating it
               for you and your beloved pets. Thank you for being part of our pet
               family! 🐾
@@ -486,21 +593,31 @@
     <section class="cta" id="download">
       <div class="container">
         <div class="cta-content">
-          <h2>Ready to Give Your Pet<br />The Best Care?</h2>
-          <p>Join thousands of pet parents who trust PawMind</p>
+          <h2 data-translate="cta.title" data-translate-html>
+            Ready to Give Your Pet<br />The Best Care?
+          </h2>
+          <p data-translate="cta.subtitle">
+            Join thousands of pet parents who trust PawMind
+          </p>
           <div class="download-buttons">
             <button class="store-btn app-store">
               <span class="store-icon">🍎</span>
               <div>
-                <small>Download on the</small>
-                <strong>App Store</strong>
+                <small data-translate="cta.appStore.subtitle"
+                  >Download on the</small
+                >
+                <strong data-translate="cta.appStore.title">App Store</strong>
               </div>
             </button>
             <button class="store-btn google-play">
               <span class="store-icon">▶️</span>
               <div>
-                <small>GET IT ON</small>
-                <strong>Google Play</strong>
+                <small data-translate="cta.googlePlay.subtitle"
+                  >GET IT ON</small
+                >
+                <strong data-translate="cta.googlePlay.title"
+                  >Google Play</strong
+                >
               </div>
             </button>
           </div>
@@ -517,39 +634,82 @@
               <img src="assets/logo.png" alt="PawMind Logo" />
               <span>PAWMIND</span>
             </div>
-            <p>Making pet care simple, smart, and joyful.</p>
+            <p data-translate="footer.tagline">
+              Making pet care simple, smart, and joyful.
+            </p>
           </div>
           <div class="footer-links">
             <div class="footer-column">
-              <h4>Product</h4>
+              <h4 data-translate="footer.product">Product</h4>
               <ul>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#download">Download</a></li>
+                <li>
+                  <a href="#features" data-translate="footer.features"
+                    >Features</a
+                  >
+                </li>
+                <li>
+                  <a href="#about" data-translate="footer.about">About</a>
+                </li>
+                <li>
+                  <a href="#download" data-translate="footer.download"
+                    >Download</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="footer-column">
-              <h4>Company</h4>
+              <h4 data-translate="footer.company">Company</h4>
               <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li>
+                  <a href="#about" data-translate="footer.about">About</a>
+                </li>
+                <li>
+                  <a href="contact.html" data-translate="footer.contact"
+                    >Contact</a
+                  >
+                </li>
               </ul>
             </div>
             <div class="footer-column">
-              <h4>Support</h4>
+              <h4 data-translate="footer.support">Support</h4>
               <ul>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="delete-account.html">Delete Account</a></li>
+                <li>
+                  <a href="privacy.html" data-translate="footer.privacy"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="delete-account.html"
+                    data-translate="footer.deleteAccount"
+                    >Delete Account</a
+                  >
+                </li>
               </ul>
             </div>
           </div>
         </div>
         <div class="footer-bottom">
-          <p>&copy; 2025 PawMind. All rights reserved.</p>
+          <p data-translate="footer.copyright">
+            &copy; 2025 PawMind. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
 
+    <script src="translations_embedded.js" charset="UTF-8"></script>
+    <script>
+      // Verify translations loaded
+      if (window.EMBEDDED_TRANSLATIONS) {
+        console.log("✓ translations_embedded.js loaded");
+        console.log(
+          "Languages available:",
+          Object.keys(window.EMBEDDED_TRANSLATIONS).join(", ")
+        );
+      } else {
+        console.error("✗ translations_embedded.js failed to load");
+      }
+    </script>
     <script src="language.js"></script>
     <script src="script.js"></script>
   </body>

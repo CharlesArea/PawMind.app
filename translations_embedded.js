@@ -1,4 +1,5 @@
-{
+﻿// Embedded translations
+window.EMBEDDED_TRANSLATIONS = {
   "en": {
     "nav": {
       "about": "About us",
@@ -886,3 +887,4 @@
 
 
 
+;

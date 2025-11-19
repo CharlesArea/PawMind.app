@@ -408,8 +408,75 @@ body {
     flex-wrap: wrap;
 }
 
-.hero-learn-more {
-    margin-bottom: 50px;
+/* Hero Scroll Indicator */
+.hero-scroll-indicator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    z-index: 10;
+}
+
+.scroll-arrows {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.scroll-arrow {
+    font-size: 1.5rem;
+    color: var(--gray);
+    animation: bounce 2s ease-in-out infinite;
+    display: block;
+}
+
+.scroll-arrow:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.scroll-arrow:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.scroll-arrow:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translateY(10px);
+        opacity: 1;
+    }
+}
+
+.scroll-text {
+    font-size: 0.9rem;
+    color: var(--gray);
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+.hero-scroll-indicator:hover {
+    transform: translateX(-50%) translateY(5px);
+}
+
+.hero-scroll-indicator:hover .scroll-arrow {
+    color: var(--accent-color);
+}
+
+.hero-scroll-indicator:hover .scroll-text {
+    color: var(--accent-color);
 }
 
 .store-badge {
@@ -1929,10 +1996,6 @@ body {
         align-items: stretch;
     }
 
-    .hero-learn-more {
-        display: flex;
-        justify-content: center;
-    }
 
     .store-badge,
     .btn-secondary {

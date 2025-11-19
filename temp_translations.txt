@@ -1,0 +1,880 @@
+﻿{
+  "en": {
+    "nav": {
+      "about": "About us",
+      "features": "Features",
+      "download": "Download now"
+    },
+    "hero": {
+      "badge": "100% Free Pet Care App",
+      "title": "Your Pet's Health & Happiness,<br />All in One Place",
+      "description": "AI-powered insights, smart reminders, and comprehensive health tracking. Everything you need to give your pet the best care possible.",
+      "downloadButton": "Download for Free",
+      "learnMore": "Learn More",
+      "stats": {
+        "parents": "Happy Pet Parents with Loving Families",
+        "records": "Health Records Trained AI Model",
+        "advisor": "AI Health Advisor"
+      },
+      "tabs": {
+        "profile": "Pet Profile",
+        "health": "Health",
+        "expenses": "Expenses",
+        "reminders": "Reminders",
+        "memories": "Memories",
+        "sharing": "Sharing"
+      },
+      "features": {
+        "aiInsights": "AI-Powered Health Insights",
+        "allDevices": "Works on All Devices",
+        "secure": "Secure & Private"
+      }
+    },
+    "features": {
+      "title": "Everything Your Pet Needs, All in One Place",
+      "subtitle": "Completely free. Forever.",
+      "badge": "100% Free",
+      "petManagement": {
+        "title": "Pet Management, Simplified",
+        "description": "Add unlimited pets from cats and dogs to rabbits, birds, reptiles, and fish. Store details like age, breed, weight, and gender. Keep vaccination records, allergies, diet plans, and health notes always up to date."
+      },
+      "aiHealth": {
+        "title": "AI-Powered Pet Health Advisor",
+        "description": "Powered by 1,000,000+ rows of real veterinary data. AI detects potential health risks, provides early suggestions for common diseases, and tracks trends over time. It's like having a virtual vet that never sleeps."
+      },
+      "expenses": {
+        "title": "Smart Expense Tracking",
+        "description": "Log expenses effortlessly with categories for food, medical, grooming, toys, training, and travel. Visual charts help you understand spending habits and set budgets. Save smarter. Care better."
+      },
+      "reminders": {
+        "title": "Health & Reminder System",
+        "description": "Never miss what matters. Automatic reminders for vaccines, deworming, grooming, and vet visits. Medication alerts and feeding schedules. Sync with your calendar for peace of mind."
+      },
+      "memories": {
+        "title": "Memories That Last Forever",
+        "description": "Capture your pet's best photos and videos. Write journal entries for special days. Auto-organize by timeline and pet name. Relive memories anytime, beautifully."
+      },
+      "share": {
+        "title": "Share Instantly with Family & Vets",
+        "description": "Send medical records or vaccination certificates with one tap. Quick share via link or PDF. Cloud-sync keeps everything updated across devices. Optional local-only mode for privacy."
+      },
+      "learnMore": "Learn More"
+    },
+    "about": {
+      "title": "About PawMind",
+      "intro": "We are a group of pet lovers, dedicated to providing the best for our furry family members. As an old saying goes,",
+      "quote": "We have everything else, but our pets only have us.",
+      "description": "We strive to offer the best tools for both pets and their owners, helping you keep track of your pet's health, memories, and well-being. From weight tracking to vaccination records, from precious photos to important documents, PawMind is here to support you and your pet's journey together.",
+      "closing": "We hope you enjoy using PawMind as much as we enjoyed creating it for you and your beloved pets. Thank you for being part of our pet family! ?"
+    },
+    "cta": {
+      "title": "Ready to Give Your Pet<br />The Best Care?",
+      "subtitle": "Join thousands of pet parents who trust PawMind",
+      "appStore": {
+        "subtitle": "Download on the",
+        "title": "App Store"
+      },
+      "googlePlay": {
+        "subtitle": "GET IT ON",
+        "title": "Google Play"
+      }
+    },
+    "footer": {
+      "tagline": "Making pet care simple, smart, and joyful.",
+      "product": "Product",
+      "company": "Company",
+      "support": "Support",
+      "features": "Features",
+      "about": "About",
+      "download": "Download",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "deleteAccount": "Delete Account",
+      "copyright": "2025 PawMind. All rights reserved."
+    },
+    "scroll": {
+      "learningMore": "Learning More"
+    }
+  },
+  "es": {
+    "nav": {
+      "about": "Sobre nosotros",
+      "features": "Caracter穩sticas",
+      "download": "Descargar ahora"
+    },
+    "hero": {
+      "badge": "Aplicaci籀n Gratuita 100% para el Cuidado de Mascotas",
+      "title": "La Salud y Felicidad de tu Mascota,<br />Todo en un Lugar",
+      "description": "Informaci籀n impulsada por IA, recordatorios inteligentes y seguimiento completo de salud. Todo lo que necesitas para brindarle el mejor cuidado posible a tu mascota.",
+      "downloadButton": "Descargar Gratis",
+      "learnMore": "Saber M獺s",
+      "stats": {
+        "parents": "Padres de Mascotas Felices con Familias Cari簽osas",
+        "records": "Registros de Salud Entrenados con Modelo IA",
+        "advisor": "Asesor de Salud IA"
+      },
+      "tabs": {
+        "profile": "Perfil Mascota",
+        "health": "Salud",
+        "expenses": "Gastos",
+        "reminders": "Recordatorios",
+        "memories": "Recuerdos",
+        "sharing": "Compartir"
+      },
+      "features": {
+        "aiInsights": "Informaci籀n de Salud con IA",
+        "allDevices": "Funciona en Todos los Dispositivos",
+        "secure": "Seguro y Privado"
+      }
+    },
+    "features": {
+      "title": "Todo lo que tu Mascota Necesita, en un Solo Lugar",
+      "subtitle": "Completamente gratis. Para siempre.",
+      "badge": "100% Gratis",
+      "petManagement": {
+        "title": "Gesti籀n de Mascotas, Simplificada",
+        "description": "Agrega mascotas ilimitadas desde gatos y perros hasta conejos, aves, reptiles y peces. Almacena detalles como edad, raza, peso y g矇nero. Mant矇n registros de vacunaci籀n, alergias, planes de dieta y notas de salud siempre actualizados."
+      },
+      "aiHealth": {
+        "title": "Asesor de Salud para Mascotas con IA",
+        "description": "Impulsado por m獺s de 1,000,000 de filas de datos veterinarios reales. La IA detecta riesgos potenciales de salud, brinda sugerencias tempranas para enfermedades comunes y rastrea tendencias con el tiempo. Es como tener un veterinario virtual que nunca duerme."
+      },
+      "expenses": {
+        "title": "Seguimiento Inteligente de Gastos",
+        "description": "Registra gastos sin esfuerzo con categor穩as para comida, m矇dico, aseo, juguetes, entrenamiento y viajes. Los gr獺ficos visuales te ayudan a comprender los h獺bitos de gasto y establecer presupuestos. Ahorra m獺s inteligentemente. Cuida mejor."
+      },
+      "reminders": {
+        "title": "Sistema de Salud y Recordatorios",
+        "description": "Nunca pierdas lo que importa. Recordatorios autom獺ticos para vacunas, desparasitaci籀n, aseo y visitas al veterinario. Alertas de medicaci籀n y horarios de alimentaci籀n. Sincroniza con tu calendario para tranquilidad."
+      },
+      "memories": {
+        "title": "Recuerdos que Duran para Siempre",
+        "description": "Captura las mejores fotos y videos de tu mascota. Escribe entradas de diario para d穩as especiales. Organiza autom獺ticamente por l穩nea de tiempo y nombre de mascota. Revive recuerdos en cualquier momento, bellamente."
+      },
+      "share": {
+        "title": "Comparte al Instante con Familia y Veterinarios",
+        "description": "Env穩a registros m矇dicos o certificados de vacunaci籀n con un toque. Comparte r獺pidamente a trav矇s de enlace o PDF. La sincronizaci籀n en la nube mantiene todo actualizado en todos los dispositivos. Modo local opcional para privacidad."
+      },
+      "learnMore": "Saber M獺s"
+    },
+    "about": {
+      "title": "Sobre PawMind",
+      "intro": "Somos un grupo de amantes de las mascotas, dedicados a proporcionar lo mejor para nuestros peludos miembros de la familia. Como dice un viejo refr獺n,",
+      "quote": "Nosotros lo tenemos todo, pero nuestras mascotas solo nos tienen a nosotros.",
+      "description": "Nos esforzamos por ofrecer las mejores herramientas tanto para las mascotas como para sus due簽os, ayud獺ndote a llevar un seguimiento de la salud, los recuerdos y el bienestar de tu mascota. Desde el seguimiento del peso hasta los registros de vacunaci籀n, desde fotos preciosas hasta documentos importantes, PawMind est獺 aqu穩 para apoyarte a ti y al viaje de tu mascota juntos.",
+      "closing": "Esperamos que disfrutes usando PawMind tanto como nosotros disfrutamos cre獺ndolo para ti y tus queridas mascotas. 癒Gracias por ser parte de nuestra familia de mascotas! ?"
+    },
+    "cta": {
+      "title": "聶Listo para Darle a tu Mascota<br />el Mejor Cuidado?",
+      "subtitle": "?nete a miles de padres de mascotas que conf穩an en PawMind",
+      "appStore": {
+        "subtitle": "Descargar en",
+        "title": "App Store"
+      },
+      "googlePlay": {
+        "subtitle": "DISPONIBLE EN",
+        "title": "Google Play"
+      }
+    },
+    "footer": {
+      "tagline": "Haciendo el cuidado de mascotas simple, inteligente y alegre.",
+      "product": "Producto",
+      "company": "Compa簽穩a",
+      "support": "Soporte",
+      "features": "Caracter穩sticas",
+      "about": "Acerca de",
+      "download": "Descargar",
+      "contact": "Contacto",
+      "privacy": "Pol穩tica de Privacidad",
+      "deleteAccount": "Eliminar Cuenta",
+      "copyright": "2025 PawMind. Todos los derechos reservados."
+    },
+    "scroll": {
+      "learningMore": "Saber M獺s"
+    }
+  },
+  "zh": {
+    "nav": {
+      "about": "?喃??賑",
+      "features": "?",
+      "download": "蝡銝蝸"
+    },
+    "hero": {
+      "badge": "100% ?晶摰?斤?摨",
+      "title": "?典??拍??亙熒銝翰銋?<br />撠賢銝憭?,
+      "description": "AI撽勗??撖?賣????券?摨瑁蕭頦芥蛹?函?摰???雿單???????,
+      "downloadButton": "?晶銝蝸",
+      "learnMore": "鈭圾?游?",
+      "stats": {
+        "parents": "?摰嗅滬?翰銋??拐蜓鈭?,
+        "records": "?亙熒霈啣?霈剔?AI璅∪?",
+        "advisor": "AI?亙熒憿暸"
+      },
+      "tabs": {
+        "profile": "摰韏?",
+        "health": "?亙熒",
+        "expenses": "?臬",
+        "reminders": "??",
+        "memories": "??",
+        "sharing": "?澈"
+      },
+      "features": {
+        "aiInsights": "AI撽勗?摨瑟?撖?,
+        "allDevices": "?鈭??挽憭?,
+        "secure": "摰??撖?
+      }
+    },
+    "features": {
+      "title": "?函?摰?閬?銝??撠賢銝憭?,
+      "subtitle": "摰?晶?偶餈?,
+      "badge": "100% ?晶",
+      "petManagement": {
+        "title": "摰蝞∠?嚗???,
+        "description": "瘛餃???摰嚗??怎??啣?摮?蝐颯銵?拙?敼潛掩???典僑樴?蝘????批蝑祕蝏縑?胯???扇敶??幼憌恣???亙熒蝚扇憪???啜?
+      },
+      "aiHealth": {
+        "title": "AI撽勗???拙摨琿▽??,
+        "description": "?梯?餈?00銝????賢?唳撽勗?I璉瘚??函??亙熒憌嚗蛹撣貉??曄????拇?撱箄悅嚗僎餈質葵??游???頞?停???銝芣偶銝閫????賢??
+      },
+      "expenses": {
+        "title": "?箄?臬餈質葵",
+        "description": "頧餅霈啣?憌???摰嫘?瑯悌蝏???蝑掩?怎?韐寧?閫??曇”撣桀?其?閫??箔??臬僎霈曉?憸???芣??啣?憟賢?單??
+      },
+      "reminders": {
+        "title": "?亙熒???頂蝏?,
+        "description": "瘞訾?????鈭★??店?怒?摰孵??賢撠梯???冽???拇??????園銵具??函??亙??郊嚗悟?典?敹?
+      },
+      "memories": {
+        "title": "瘞豢???敹?,
+        "description": "???典??拇?憟賜??抒???憸蛹?寞??亙??霈啜??園蝥踹?摰?妍?芸蝏????嗥?憟賢?萱????
+      },
+      "share": {
+        "title": "?單銝振鈭箏??賢?澈",
+        "description": "銝?桀???扇敶??怨?霂髡???暹?DF敹恍?鈭怒??郊靽???挽憭??縑?舀?啜??隞?唳芋撘??日?蝘?
+      },
+      "learnMore": "鈭圾?游?"
+    },
+    "about": {
+      "title": "?喃?PawMind",
+      "intro": "?賑?臭?蝢文??拍憟質??游?鈭蛹?賑瘥?貊?摰嗅滬?????憟賜??迤憒??亥??霂湛?",
+      "quote": "?賑?交?銝??雿?隞祉?摰?芣??賑??,
+      "description": "?賑?芸?銝箏??拙??嗡蜓鈭箸?靘?憟賜?撌亙嚗葬?拇餈質葵摰?摨瑯?敹?蝳???雿?餈質葵?啁?扇敶?隞?韐萇????辣嚗awMind?刻????摰???蝔?,
+      "closing": "?賑撣??典?甈Ｖ蝙?沌awMind嚗停??隞砍?甈Ｖ蛹?典??典??梁?摰?遣摰??瑯?靚Ｘ?蛹?賑摰摰嗅滬?????"
+    },
+    "cta": {
+      "title": "??蝏????br />?憟賜??折▽嚗?,
+      "subtitle": "??啣?靽∩遙PawMind???拐蜓鈭?,
+      "appStore": {
+        "subtitle": "銝蝸鈭?,
+        "title": "App Store"
+      },
+      "googlePlay": {
+        "subtitle": "?瑕?鈭?,
+        "title": "Google Play"
+      }
+    },
+    "footer": {
+      "tagline": "霈拙??拇??敺???賢?敹思???,
+      "product": "鈭批?",
+      "company": "?砍",
+      "support": "?舀?",
+      "features": "?",
+      "about": "?喃?",
+      "download": "銝蝸",
+      "contact": "?頂",
+      "privacy": "???輻?",
+      "deleteAccount": "?韐行",
+      "copyright": "2025 PawMind???????押?
+    },
+    "scroll": {
+      "learningMore": "鈭圾?游?"
+    }
+  },
+  "de": {
+    "nav": {
+      "about": "?ber uns",
+      "features": "Funktionen",
+      "download": "Jetzt herunterladen"
+    },
+    "hero": {
+      "badge": "100% Kostenlose Haustierpflege-App",
+      "title": "Die Gesundheit & das Gl羹ck Ihres Haustieres,<br />Alles an einem Ort",
+      "description": "KI-gest羹tzte Einblicke, intelligente Erinnerungen und umfassende Gesundheits羹berwachung. Alles, was Sie brauchen, um Ihrem Haustier die bestm繹gliche Pflege zu geben.",
+      "downloadButton": "Kostenlos herunterladen",
+      "learnMore": "Mehr erfahren",
+      "stats": {
+        "parents": "Gl羹ckliche Haustiereltern mit liebevollen Familien",
+        "records": "Gesundheitsdaten trainiertes KI-Modell",
+        "advisor": "KI-Gesundheitsberater"
+      },
+      "tabs": {
+        "profile": "Haustierprofil",
+        "health": "Gesundheit",
+        "expenses": "Ausgaben",
+        "reminders": "Erinnerungen",
+        "memories": "Erinnerungen",
+        "sharing": "Teilen"
+      },
+      "features": {
+        "aiInsights": "KI-gest羹tzte Gesundheitseinblicke",
+        "allDevices": "Funktioniert auf allen Ger瓣ten",
+        "secure": "Sicher & Privat"
+      }
+    },
+    "features": {
+      "title": "Alles, was Ihr Haustier braucht, an einem Ort",
+      "subtitle": "V繹llig kostenlos. F羹r immer.",
+      "badge": "100% Kostenlos",
+      "petManagement": {
+        "title": "Haustierverwaltung, vereinfacht",
+        "description": "F羹gen Sie unbegrenzt Haustiere hinzu, von Katzen und Hunden bis zu Kaninchen, V繹geln, Reptilien und Fischen. Speichern Sie Details wie Alter, Rasse, Gewicht und Geschlecht. Halten Sie Impfaufzeichnungen, Allergien, Ern瓣hrungspl瓣ne und Gesundheitsnotizen immer auf dem neuesten Stand."
+      },
+      "aiHealth": {
+        "title": "KI-gest羹tzter Haustiergesundheitsberater",
+        "description": "Angetrieben von 羹ber 1.000.000 Zeilen echter tier瓣rztlicher Daten. Die KI erkennt potenzielle Gesundheitsrisiken, bietet fr羹he Vorschl瓣ge f羹r h瓣ufige Krankheiten und verfolgt Trends im Laufe der Zeit. Es ist, als h瓣tte man einen virtuellen Tierarzt, der niemals schl瓣ft."
+      },
+      "expenses": {
+        "title": "Intelligente Ausgabenverfolgung",
+        "description": "Erfassen Sie Ausgaben m羹helos mit Kategorien f羹r Futter, medizinische Versorgung, Pflege, Spielzeug, Training und Reisen. Visuelle Diagramme helfen Ihnen, Ausgewohnheiten zu verstehen und Budgets festzulegen. Sparen Sie intelligenter. Pflegen Sie besser."
+      },
+      "reminders": {
+        "title": "Gesundheits- & Erinnerungssystem",
+        "description": "Verpassen Sie nie, was wichtig ist. Automatische Erinnerungen f羹r Impfungen, Entwurmung, Pflege und Tierarztbesuche. Medikamentenalarme und F羹tterungspl瓣ne. Synchronisieren Sie mit Ihrem Kalender f羹r Seelenfrieden."
+      },
+      "memories": {
+        "title": "Erinnerungen, die f羹r immer bleiben",
+        "description": "Erfassen Sie die besten Fotos und Videos Ihres Haustieres. Schreiben Sie Tagebucheintr瓣ge f羹r besondere Tage. Automatische Organisation nach Zeitachse und Haustiername. Erleben Sie Erinnerungen jederzeit wundersch繹n neu."
+      },
+      "share": {
+        "title": "Sofort mit Familie & Tier瓣rzten teilen",
+        "description": "Senden Sie medizinische Aufzeichnungen oder Impfzertifikate mit einem Tippen. Schnelles Teilen 羹ber Link oder PDF. Cloud-Sync h瓣lt alles auf allen Ger瓣ten aktualisiert. Optionaler Nur-Lokal-Modus f羹r Privatsph瓣re."
+      },
+      "learnMore": "Mehr erfahren"
+    },
+    "about": {
+      "title": "?ber PawMind",
+      "intro": "Wir sind eine Gruppe von Tierliebhabern, die sich der besten Versorgung unserer pelzigen Familienmitglieder widmet. Wie ein altes Sprichwort sagt,",
+      "quote": "Wir haben alles andere, aber unsere Haustiere haben nur uns.",
+      "description": "Wir bem羹hen uns, die besten Tools sowohl f羹r Haustiere als auch f羹r ihre Besitzer anzubieten und Ihnen zu helfen, die Gesundheit, Erinnerungen und das Wohlbefinden Ihres Haustieres im Auge zu behalten. Von der Gewichtsverfolgung bis zu Impfaufzeichnungen, von wertvollen Fotos bis zu wichtigen Dokumenten, PawMind ist hier, um Sie und die gemeinsame Reise Ihres Haustieres zu unterst羹tzen.",
+      "closing": "Wir hoffen, dass Sie PawMind genauso gerne nutzen wie wir es f羹r Sie und Ihre geliebten Haustiere erstellt haben. Danke, dass Sie Teil unserer Haustierfamilie sind! ?"
+    },
+    "cta": {
+      "title": "Bereit, Ihrem Haustier<br />die beste Pflege zu geben?",
+      "subtitle": "Schlie?en Sie sich Tausenden von Haustiereltern an, die PawMind vertrauen",
+      "appStore": {
+        "subtitle": "Im",
+        "title": "App Store herunterladen"
+      },
+      "googlePlay": {
+        "subtitle": "BEI",
+        "title": "Google Play erh瓣ltlich"
+      }
+    },
+    "footer": {
+      "tagline": "Haustierpflege einfach, intelligent und fr繹hlich machen.",
+      "product": "Produkt",
+      "company": "Unternehmen",
+      "support": "Support",
+      "features": "Funktionen",
+      "about": "?ber",
+      "download": "Herunterladen",
+      "contact": "Kontakt",
+      "privacy": "Datenschutzrichtlinie",
+      "deleteAccount": "Konto l繹schen",
+      "copyright": "2025 PawMind. Alle Rechte vorbehalten."
+    },
+    "scroll": {
+      "learningMore": "Mehr erfahren"
+    }
+  },
+  "fr": {
+    "nav": {
+      "about": "? propos de nous",
+      "features": "Fonctionnalit矇s",
+      "download": "T矇l矇charger maintenant"
+    },
+    "hero": {
+      "badge": "Application 100% Gratuite pour les Animaux",
+      "title": "La Sant矇 & le Bonheur de Votre Animal,<br />Tout au M礙me Endroit",
+      "description": "Informations aliment矇es par l'IA, rappels intelligents et suivi complet de la sant矇. Tout ce dont vous avez besoin pour offrir les meilleurs soins possibles ? votre animal.",
+      "downloadButton": "T矇l矇charger Gratuitement",
+      "learnMore": "En Savoir Plus",
+      "stats": {
+        "parents": "Propri矇taires d'Animaux Heureux avec Familles Aimantes",
+        "records": "Mod癡le IA Entra簾n矇 sur les Dossiers de Sant矇",
+        "advisor": "Conseiller de Sant矇 IA"
+      },
+      "tabs": {
+        "profile": "Profil Animal",
+        "health": "Sant矇",
+        "expenses": "D矇penses",
+        "reminders": "Rappels",
+        "memories": "Souvenirs",
+        "sharing": "Partage"
+      },
+      "features": {
+        "aiInsights": "Informations de Sant矇 Aliment矇es par l'IA",
+        "allDevices": "Fonctionne sur Tous les Appareils",
+        "secure": "S矇curis矇 & Priv矇"
+      }
+    },
+    "features": {
+      "title": "Tout ce dont Votre Animal a Besoin, au M礙me Endroit",
+      "subtitle": "Compl癡tement gratuit. Pour toujours.",
+      "badge": "100% Gratuit",
+      "petManagement": {
+        "title": "Gestion d'Animaux, Simplifi矇e",
+        "description": "Ajoutez un nombre illimit矇 d'animaux, des chats et chiens aux lapins, oiseaux, reptiles et poissons. Stockez des d矇tails comme l'璽ge, la race, le poids et le sexe. Gardez les dossiers de vaccination, les allergies, les r矇gimes alimentaires et les notes de sant矇 toujours ? jour."
+      },
+      "aiHealth": {
+        "title": "Conseiller de Sant矇 pour Animaux Aliment矇 par l'IA",
+        "description": "Aliment矇 par plus de 1 000 000 de lignes de donn矇es v矇t矇rinaires r矇elles. L'IA d矇tecte les risques potentiels pour la sant矇, fournit des suggestions pr矇coces pour les maladies courantes et suit les tendances dans le temps. C'est comme avoir un v矇t矇rinaire virtuel qui ne dort jamais."
+      },
+      "expenses": {
+        "title": "Suivi Intelligent des D矇penses",
+        "description": "Enregistrez les d矇penses sans effort avec des cat矇gories pour la nourriture, les soins m矇dicaux, le toilettage, les jouets, l'entra簾nement et les voyages. Les graphiques visuels vous aident ? comprendre les habitudes de d矇penses et ? d矇finir des budgets. ?conomisez plus intelligemment. Prenez mieux soin."
+      },
+      "reminders": {
+        "title": "Syst癡me de Sant矇 & Rappels",
+        "description": "Ne manquez jamais ce qui compte. Rappels automatiques pour les vaccins, le d矇parasitage, le toilettage et les visites v矇t矇rinaires. Alertes de m矇dicaments et horaires d'alimentation. Synchronisez avec votre calendrier pour la tranquillit矇 d'esprit."
+      },
+      "memories": {
+        "title": "Des Souvenirs qui Durent pour Toujours",
+        "description": "Capturez les meilleures photos et vid矇os de votre animal. ?crivez des entr矇es de journal pour les jours sp矇ciaux. Organisation automatique par chronologie et nom d'animal. Revivez les souvenirs ? tout moment, magnifiquement."
+      },
+      "share": {
+        "title": "Partagez Instantan矇ment avec la Famille & les V矇t矇rinaires",
+        "description": "Envoyez des dossiers m矇dicaux ou des certificats de vaccination en un seul clic. Partage rapide via lien ou PDF. La synchronisation cloud maintient tout ? jour sur tous les appareils. Mode local uniquement optionnel pour la confidentialit矇."
+      },
+      "learnMore": "En Savoir Plus"
+    },
+    "about": {
+      "title": "? Propos de PawMind",
+      "intro": "Nous sommes un groupe d'amoureux des animaux, d矇di矇s ? fournir le meilleur ? nos membres de famille ? fourrure. Comme le dit un vieux dicton,",
+      "quote": "Nous avons tout le reste, mais nos animaux n'ont que nous.",
+      "description": "Nous nous effor癟ons d'offrir les meilleurs outils ? la fois pour les animaux et leurs propri矇taires, vous aidant ? suivre la sant矇, les souvenirs et le bien-礙tre de votre animal. Du suivi du poids aux dossiers de vaccination, des photos pr矇cieuses aux documents importants, PawMind est l? pour vous soutenir, vous et le voyage de votre animal ensemble.",
+      "closing": "Nous esp矇rons que vous appr矇cierez utiliser PawMind autant que nous avons aim矇 le cr矇er pour vous et vos animaux bien-aim矇s. Merci de faire partie de notre famille d'animaux ! ?"
+    },
+    "cta": {
+      "title": "Pr礙t ? Donner ? Votre Animal<br />les Meilleurs Soins ?",
+      "subtitle": "Rejoignez des milliers de propri矇taires d'animaux qui font confiance ? PawMind",
+      "appStore": {
+        "subtitle": "T矇l矇charger sur",
+        "title": "l'App Store"
+      },
+      "googlePlay": {
+        "subtitle": "DISPONIBLE SUR",
+        "title": "Google Play"
+      }
+    },
+    "footer": {
+      "tagline": "Rendre les soins aux animaux simples, intelligents et joyeux.",
+      "product": "Produit",
+      "company": "Entreprise",
+      "support": "Support",
+      "features": "Fonctionnalit矇s",
+      "about": "? propos",
+      "download": "T矇l矇charger",
+      "contact": "Contact",
+      "privacy": "Politique de Confidentialit矇",
+      "deleteAccount": "Supprimer le Compte",
+      "copyright": "2025 PawMind. Tous droits r矇serv矇s."
+    },
+    "scroll": {
+      "learningMore": "En Savoir Plus"
+    }
+  },
+  "ja": {
+    "nav": {
+      "about": "蝘??～?扎???,
+      "features": "璈",
+      "download": "隞????艾?准??
+    },
+    "hero": {
+      "badge": "100%?⊥?????Ｕ?",
+      "title": "????亙熒?典兢??br />??艾?銝蝞???,
+      "description": "AI?暑?具???撖????喋??潦??祉??芸摨瑁蕭頝～????急?擃?晞??靘????敹??芥??嫘???????,
+      "downloadButton": "?⊥???艾?准??,
+      "learnMore": "閰喟敦????,
+      "stats": {
+        "parents": "??瘛晞?摰嗆??典?怒??兢????閬?,
+        "records": "?亙熒閮?扯?蝺氬???AI?Ｕ???,
+        "advisor": "AI?亙熒?Ｕ???嗚"
+      },
+      "tabs": {
+        "profile": "?????准?????,
+        "health": "?亙熒",
+        "expenses": "?臬",
+        "reminders": "?芥??扎???,
+        "memories": "????,
+        "sharing": "?望?"
+      },
+      "features": {
+        "aiInsights": "AI?暑?具??摨瑟?撖?,
+        "allDevices": "??艾???扎?批?雿?,
+        "secure": "摰?扼??押???
+      }
+    },
+    "features": {
+      "title": "???敹??芥??嫘??蝞???,
+      "subtitle": "摰?⊥??偶???,
+      "badge": "100%?⊥?",
+      "petManagement": {
+        "title": "???恣??喋??怒",
+        "description": "?怒??研???萸?野??恍????整??園??怒????蕭???僑朣Ｕ?蝔柴??批?芥?株底蝝啜?靽????胯??唾??脯?研?柴??鈭??颯摨瑯?Ｕ?撣詻??啜?嗆??思??～??
+      },
+      "aiHealth": {
+        "title": "AI?暑?具??????亙熒?Ｕ???嗚",
+        "description": "100銝?隞乩??桀??????踴???I???函??芸摨瑯?嫘???箝????祉??芰?瘞?拇?????靘????蝯??具??曉??蕭頝～??整??捱????芥?隞格?????扎????扼???
+      },
+      "expenses": {
+        "title": "?嫘??潦??臬餈質楚",
+        "description": "憌?押??怒??啜?????研??啜?銵?怒??氬?抒陛??臬???脯?閬??芥??????臬蝧??閫????蝞?閮剖????柴敶寧??～???郭??蝝????Ｕ?
+      },
+      "reminders": {
+        "title": "?亙熒?具??喋??潦?嫘???,
+        "description": "???芥??具?閬??芥???胯??喋??怒?怒??啜?餉赤??芸??芥??扎??潦?押?押?蝯阡??嫘?詻?潦???桀像摰???怒?研??潦????
+      },
+      "memories": {
+        "title": "瘞賊??怎?????,
+        "description": "????擃???典??颯??准?????乓?乓?亥??具????扎??押?喋?????扯????扎???????箝???擉?
+      },
+      "share": {
+        "title": "摰嗆??函?颯?喳漣?怠??,
+        "description": "?胯?踴???餌?閮??胯??唾釆??縑??喋?整??烈DF?扯???望???押????????嫘?柴???嫘??啜?嗆??雁???押??潦???柴??扼?柴?潦?怒?踴?潦???
+      },
+      "learnMore": "閰喟敦????
+    },
+    "about": {
+      "title": "PawMind?怒?",
+      "intro": "蝘??～????憟賢振?柴?怒?????????桀振?銝?～???撠賬????具撠艙??????具???????怒?,
+      "quote": "蝘??～?臭??怒??嫘??????????怒蝘??～????整???,
+      "description": "????憌潦?銝颯銝⊥?急??胯??怒????????芥??????桀摨瑯??箝兢蝳?餈質楚????隡????整????蕭頝～???胯??唾??脯眼????????芣憿?扼awMind?胯??芥??具????桀????萸??潦??????怒?????整???,
+      "closing": "蝘??～????????????柴??????????典????????芥??awMind?蝙?具????具?璆賬???????具?憿?艾??整?????柴??????潦銝?～?芥?艾????????"
+    },
+    "cta": {
+      "title": "????擃?晞??br />????皞??胯????嚗?,
+      "subtitle": "PawMind?縑?潦????犖????閬芥??",
+      "appStore": {
+        "subtitle": "App Store??,
+        "title": "??艾?准??
+      },
+      "googlePlay": {
+        "subtitle": "Google Play??,
+        "title": "?交?"
+      }
+    },
+    "footer": {
+      "tagline": "????Ｕ??瑯??????璆賬???,
+      "product": "鋆賢?",
+      "company": "隡冗",
+      "support": "?萸??潦?",
+      "features": "璈",
+      "about": "?怒?",
+      "download": "??艾?准??,
+      "contact": "??????",
+      "privacy": "??扎??瑯??瑯",
+      "deleteAccount": "?Ｕ?艾????,
+      "copyright": "2025 PawMind???璅拇???
+    },
+    "scroll": {
+      "learningMore": "閰喟敦????
+    }
+  },
+  "ko": {
+    "nav": {
+      "about": "? ??",
+      "features": "篣圉",
+      "download": "鴔篣??木諢?"
+    },
+    "hero": {
+      "badge": "100% 諡渠? 諻?狩 儤????,
+      "title": "諻?狩??穇湊?窸??陬,<br />??窸喬???諈刺?",
+      "description": "AI 篣圉? ?賄?渣, ?月????汝 諻??禹?? 穇湊? 黺?. 諻?狩?? 黖???儤?渠未 ?陬?? ??????諈刺? 窶 ??.",
+      "downloadButton": "諡渠? ?木諢?",
+      "learnMore": "????貐湊萼",
+      "stats": {
+        "parents": "?禺??? 穈魽梓頃 ?刷??? ?陬??諻?狩 賱諈?,
+        "records": "穇湊? 篣圉??潺? ???AI 諈刺",
+        "advisor": "AI 穇湊? ?渠?諻?"
+      },
+      "tabs": {
+        "profile": "諻?狩 ????,
+        "health": "穇湊?",
+        "expenses": "鴔黺?,
+        "reminders": "?汝",
+        "memories": "黺",
+        "sharing": "窸蛙?"
+      },
+      "features": {
+        "aiInsights": "AI 篣圉? 穇湊? ?賄?渣",
+        "allDevices": "諈刺? 篣國萼?? ??",
+        "secure": "???? 赬陬穈?
+      }
+    },
+    "features": {
+      "title": "諻?狩??????諈刺? 窶? ??窸喬???,
+      "subtitle": "?? 諡渠?. ????",
+      "badge": "100% 諡渠?",
+      "petManagement": {
+        "title": "諻?狩 窵謔? 穈???,
+        "description": "窸??渥? 穈????, ?? ?隆諝? 諡澎?篣國?鴔 諡渥??諢?諻?狩??黺???? ?, ??, 麮渥?, ?梵?窸?穈? ?賈? ?陷諝???伕?. ?骨?? 篣圉?, ??諝湊萼, ? 窸? 諻?穇湊? 諰爸諝??原? 黖? ??諢????拘???"
+      },
+      "aiHealth": {
+        "title": "AI 篣圉? 諻?狩 穇湊? ?渠?諻?",
+        "description": "100諤?穈??渥????木? ?????域?圉? 窱禺??拘??? AI???? 穇湊? ????穈???, ?潺?? 鴔??????魽國萼 ?????陬?庚, ?????圉斥 黺諝?黺??拘??? ?? ?鴔 ?? 穈?????禹? ?? 窶頃 穈?."
+      },
+      "expenses": {
+        "title": "?月???鴔黺?黺?",
+        "description": "??, ??, 篞賈ㄗ諻? ?伙?穈? ? 諻??秒? 儦渣?窸收諢??賈 ? 鴔黺? 篣圉???? ????麆刮??鴔黺??虛????渣?? ????木??? ???????拘??? ?????? ?黺??賄?. ?????陷?賄?."
+      },
+      "reminders": {
+        "title": "穇湊? 諻??汝 ???,
+        "description": "鴗???窶? ??鴔 諤?? ?骨??, 窱科隆, 篞賈ㄗ諻?諻?????諻拘爰??????? ?汝. ?趟狩 ?汝 諻?篣 ?潰?. 諤?????諝?? 儥旭?? ?萼???賄?."
+      },
+      "memories": {
+        "title": "????鴔????黺",
+        "description": "諻?狩??黖????科?窸?赬??月未 儥∫???? ?寨????? ????澎萼 ?卿版?????? ???資頃 諻?狩 ?渠?貐? ?? ?收. ?賄??? ???虛? 黺???木? 窶踫????"
+      },
+      "share": {
+        "title": "穈魽?諻????科? 鴞? 窸蛙?",
+        "description": "??潺? ?? 篣圉? ?? ?骨?? 鴞??未 貐渠?賄?. 諤 ?? PDF諝??蛭 赬打窶?窸蛙?. ?渠?圉? ?萼?? 諈刺? 篣國萼?? 諈刺? 窶? 黖? ??諢????拘??? 穈?陷 貐渣諝??? ????諢賑 ? 諈刺?."
+      },
+      "learnMore": "????貐湊萼"
+    },
+    "about": {
+      "title": "PawMind ??",
+      "intro": "?圉收???賈陬?原 穈魽?窱科??窶?黖????欠???諻?狩 ?穈 篞賈ㄨ???? ??????圉打諰?",
+      "quote": "?圉收?????月斥 諈刺? 窶 ??諤? ?圉收 諻?狩?????圉收諤???.",
+      "description": "?圉收??諻?狩窸?篞?鴥潰 諈刺?諝??? 黖????筋諝??陬?萼 ? ?賈?庚, 諻?狩??穇湊?, 黺 諻??圉???黺??? ??????鴗??? 麮渥? 黺?賱???骨?? 篣圉?, ?????科?賱??鴗???諡賄?篧?, PawMind???禺賱頃 諻?狩??窸蛟? ?科???鴔??篣?? ?禹萼????.",
+      "closing": "?禺賱 PawMind諝??科?? 窶? ?圉收穈 ?禺賱頃 ?禺??? 諻?狩??? 諤? 窶???鴞萼?萼諝?諻??. ?圉收 諻?狩 穈魽桿? ?潰???? 鴥潰???穈?拘??? ?"
+    },
+    "cta": {
+      "title": "諻?狩?? 黖???br />儤?渠未 ?陬??鴗赬? ????",
+      "subtitle": "PawMind諝??１?? ?? 諈? 諻?狩 賱諈到? ?拘????,
+      "appStore": {
+        "subtitle": "App Store??",
+        "title": "?木諢?"
+      },
+      "googlePlay": {
+        "subtitle": "Google Play??",
+        "title": "?木諢?"
+      }
+    },
+    "footer": {
+      "tagline": "諻?狩 儤?渠未 穈?? ?月??貲?諰?鴞?窶?諤?.",
+      "product": "??",
+      "company": "?",
+      "support": "鴔??,
+      "features": "篣圉",
+      "about": "??",
+      "download": "?木諢?",
+      "contact": "?圉麮?,
+      "privacy": "穈?陷 貐渣??",
+      "deleteAccount": "窸? ?原?",
+      "copyright": "2025 PawMind. 諈刺? 窷收 貐渥?."
+    },
+    "scroll": {
+      "learningMore": "????貐湊萼"
+    }
+  },
+  "zh-TW": {
+    "nav": {
+      "about": "???,
+      "features": "?",
+      "download": "蝡銝?"
+    },
+    "hero": {
+      "badge": "100% ?祥撖萇霅瑞??蝔?",
+      "title": "?典秘?拍??亙熒?翰璅?<br />?∪銝??,
+      "description": "AI撽???撖?賣????券?摨瑁蕭頩扎?函?撖萇???雿唾風???????,
+      "downloadButton": "?祥銝?",
+      "learnMore": "鈭圾?游?",
+      "stats": {
+        "parents": "??摰嗅滬?翰璅秘?拐蜓鈭?,
+        "records": "?亙熒閮?閮毀AI璅∪?",
+        "advisor": "AI?亙熒憿批?"
+      },
+      "tabs": {
+        "profile": "撖萇鞈?",
+        "health": "?亙熒",
+        "expenses": "?臬",
+        "reminders": "??",
+        "memories": "?",
+        "sharing": "?澈"
+      },
+      "features": {
+        "aiInsights": "AI撽??摨瑟?撖?,
+        "allDevices": "?拍?潭???蝵?,
+        "secure": "摰??撖?
+      }
+    },
+    "features": {
+      "title": "?函?撖萇?閬?銝???∪銝??,
+      "subtitle": "摰?祥?偶??,
+      "badge": "100% ?祥",
+      "petManagement": {
+        "title": "撖萇蝞∠?嚗陛??,
+        "description": "瘛餃??⊿?撖萇嚗?鞎??啣?摮野憿銵??拙?擳??摮僑朣～?蝔柴????批蝑底蝝啗?閮???????ㄡ憌????亙熒蝑?憪???啜?
+      },
+      "aiHealth": {
+        "title": "AI撽??秘?拙摨琿“??,
+        "description": "?梯???00?祈??祕?賊?豢?撽??I瑼Ｘ葫瞏?摨琿◢?迎??箏虜閬??靘?遣霅堆?銝西蕭頩日??霈??隅?Ｕ停?????偶銝閬箇???賊??
+      },
+      "expenses": {
+        "title": "?箄?臬餈質馱",
+        "description": "頛?閮?憌???摰嫘?瑯?蝺游???蝑??亦?鞎餌??閬箏??”撟怠?其?閫??箇???蒂閮剖?????唳??啣?憟賢???
+      },
+      "reminders": {
+        "title": "?亙熒???頂蝯?,
+        "description": "瘞訾??舫???鈭?????脯?摰孵??賊撠梯那?????拇???擗菟???銵具??函??交??郊嚗??典?敹?
+      },
+      "memories": {
+        "title": "瘞豢?????,
+        "description": "???典秘?拇?憟賜??抒??蔣??寞??亙?撖急閮???蝺?撖萇?迂?芸?蝯????憟賢?澈???
+      },
+      "share": {
+        "title": "?單??振鈭箏??賊?澈",
+        "description": "銝?萇??????怨?霅??????DF敹恍?鈭怒蝡臬?甇乩?????蝵桐???閮?啜?貊???唳芋撘?霅琿蝘?
+      },
+      "learnMore": "鈭圾?游?"
+    },
+    "about": {
+      "title": "?PawMind",
+      "intro": "?銝蝢文秘?拇?憟質??游??潛???貉?振摨剜??⊥?靘?憟賜??迤憒??亥店?隤迎?",
+      "quote": "??????雿???撖萇?芣???,
+      "description": "??撖萇?銝颱犖???憟賜?撌亙嚗鼠?拇餈質馱撖萇?摨瑯??嗅?蝳???擃?餈質馱?啁????敺?鞎渡????辣嚗awMind?券ㄐ?舀??典??典秘?拍??勗?????,
+      "closing": "????迭雿輻PawMind嚗停????甇∠?典??典???撖萇?萄遣摰?璅??雓??秘?拙振摨剔?銝?∴??"
+    },
+    "cta": {
+      "title": "皞?蝯行?秘??br />?憟賜??折“嚗?,
+      "subtitle": "??詨?靽∩遙PawMind?秘?拐蜓鈭?,
+      "appStore": {
+        "subtitle": "??,
+        "title": "App Store銝?"
+      },
+      "googlePlay": {
+        "subtitle": "??,
+        "title": "Google Play??"
+      }
+    },
+    "footer": {
+      "tagline": "霈秘?抵風??敺陛?柴?賢?敹急???,
+      "product": "?Ｗ?",
+      "company": "?砍",
+      "support": "?舀",
+      "features": "?",
+      "about": "?",
+      "download": "銝?",
+      "contact": "?舐窗",
+      "privacy": "?梁??輻?",
+      "deleteAccount": "?芷撣單",
+      "copyright": "2025 PawMind???????押?
+    },
+    "scroll": {
+      "learningMore": "鈭圾?游?"
+    }
+  },
+  "zh-CN": {
+    "nav": {
+      "about": "?喃??賑",
+      "features": "?",
+      "download": "蝡銝蝸"
+    },
+    "hero": {
+      "badge": "100% ?晶摰?斤?摨",
+      "title": "?典??拍??亙熒銝翰銋?<br />撠賢銝憭?,
+      "description": "AI撽勗??撖?賣????券?摨瑁蕭頦芥蛹?函?摰???雿單???????,
+      "downloadButton": "?晶銝蝸",
+      "learnMore": "鈭圾?游?",
+      "stats": {
+        "parents": "?摰嗅滬?翰銋??拐蜓鈭?,
+        "records": "?亙熒霈啣?霈剔?AI璅∪?",
+        "advisor": "AI?亙熒憿暸"
+      },
+      "tabs": {
+        "profile": "摰韏?",
+        "health": "?亙熒",
+        "expenses": "?臬",
+        "reminders": "??",
+        "memories": "??",
+        "sharing": "?澈"
+      },
+      "features": {
+        "aiInsights": "AI撽勗?摨瑟?撖?,
+        "allDevices": "?鈭??挽憭?,
+        "secure": "摰??撖?
+      }
+    },
+    "features": {
+      "title": "?函?摰?閬?銝??撠賢銝憭?,
+      "subtitle": "摰?晶?偶餈?,
+      "badge": "100% ?晶",
+      "petManagement": {
+        "title": "摰蝞∠?嚗???,
+        "description": "瘛餃???摰嚗??怎??啣?摮?蝐颯銵?拙?敼潛掩???典僑樴?蝘????批蝑祕蝏縑?胯???扇敶??幼憌恣???亙熒蝚扇憪???啜?
+      },
+      "aiHealth": {
+        "title": "AI撽勗???拙摨琿▽??,
+        "description": "?梯?餈?00銝????賢?唳撽勗?I璉瘚??函??亙熒憌嚗蛹撣貉??曄????拇?撱箄悅嚗僎餈質葵??游???頞?停???銝芣偶銝閫????賢??
+      },
+      "expenses": {
+        "title": "?箄?臬餈質葵",
+        "description": "頧餅霈啣?憌???摰嫘?瑯悌蝏???蝑掩?怎?韐寧?閫??曇”撣桀?其?閫??箔??臬僎霈曉?憸???芣??啣?憟賢?單??
+      },
+      "reminders": {
+        "title": "?亙熒???頂蝏?,
+        "description": "瘞訾?????鈭★??店?怒?摰孵??賢撠梯???冽???拇??????園銵具??函??亙??郊嚗悟?典?敹?
+      },
+      "memories": {
+        "title": "瘞豢???敹?,
+        "description": "???典??拇?憟賜??抒???憸蛹?寞??亙??霈啜??園蝥踹?摰?妍?芸蝏????嗥?憟賢?萱????
+      },
+      "share": {
+        "title": "?單銝振鈭箏??賢?澈",
+        "description": "銝?桀???扇敶??怨?霂髡???暹?DF敹恍?鈭怒??郊靽???挽憭??縑?舀?啜??隞?唳芋撘??日?蝘?
+      },
+      "learnMore": "鈭圾?游?"
+    },
+    "about": {
+      "title": "?喃?PawMind",
+      "intro": "?賑?臭?蝢文??拍憟質??游?鈭蛹?賑瘥?貊?摰嗅滬?????憟賜??迤憒??亥??霂湛?",
+      "quote": "?賑?交?銝??雿?隞祉?摰?芣??賑??,
+      "description": "?賑?芸?銝箏??拙??嗡蜓鈭箸?靘?憟賜?撌亙嚗葬?拇餈質葵摰?摨瑯?敹?蝳???雿?餈質葵?啁?扇敶?隞?韐萇????辣嚗awMind?刻????摰???蝔?,
+      "closing": "?賑撣??典?甈Ｖ蝙?沌awMind嚗停??隞砍?甈Ｖ蛹?典??典??梁?摰?遣摰??瑯?靚Ｘ?蛹?賑摰摰嗅滬?????"
+    },
+    "cta": {
+      "title": "??蝏????br />?憟賜??折▽嚗?,
+      "subtitle": "??啣?靽∩遙PawMind???拐蜓鈭?,
+      "appStore": {
+        "subtitle": "??,
+        "title": "App Store銝蝸"
+      },
+      "googlePlay": {
+        "subtitle": "??,
+        "title": "Google Play?瑕?"
+      }
+    },
+    "footer": {
+      "tagline": "霈拙??拇??敺???賢?敹思???,
+      "product": "鈭批?",
+      "company": "?砍",
+      "support": "?舀?",
+      "features": "?",
+      "about": "?喃?",
+      "download": "銝蝸",
+      "contact": "?頂",
+      "privacy": "???輻?",
+      "deleteAccount": "?韐行",
+      "copyright": "2025 PawMind???????押?
+    },
+    "scroll": {
+      "learningMore": "鈭圾?游?"
+    }
+  }
+}
+
+
+
+
+
