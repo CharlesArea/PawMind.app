@@ -391,6 +391,9 @@ body {
     margin-bottom: 25px;
     color: var(--dark-color);
     letter-spacing: -0.02em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
 }
 
 .hero-text p {
@@ -1870,6 +1873,8 @@ body {
     .hero-content {
         grid-template-columns: 1fr;
         gap: 40px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .hero-text {
@@ -2015,16 +2020,25 @@ body {
 
     .hero-content {
         gap: 30px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .hero-text {
         padding: 0 10px;
+        text-align: left;
+        width: 70%;
+        box-sizing: border-box;
     }
 
     .hero-text h1 {
         font-size: 2.5rem;
         line-height: 1.2;
         margin-bottom: 20px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        max-width: 100%;
     }
 
     .hero-text p {
@@ -2055,10 +2069,7 @@ body {
     }
 
     .hero-stats {
-        flex-direction: column;
-        gap: 20px;
-        align-items: center;
-        padding: 20px 10px 0;
+        display: none;
     }
 
     .stat-item {
@@ -2083,13 +2094,35 @@ body {
     }
 
     .phone-feature-tabs {
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
         gap: 8px;
         padding: 8px 0;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+    }
+
+    .phone-feature-tabs::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .phone-feature-tabs::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 2px;
+    }
+
+    .phone-feature-tabs::-webkit-scrollbar-thumb {
+        background: rgba(255, 182, 217, 0.5);
+        border-radius: 2px;
     }
 
     .feature-tab {
         padding: 10px 14px;
         min-width: 90px;
+        flex-shrink: 0;
         -webkit-tap-highlight-color: transparent;
         touch-action: manipulation;
     }
@@ -2184,16 +2217,25 @@ body {
 
     .hero-content {
         gap: 25px;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .hero-text {
         padding: 0 5px;
+        text-align: left;
+        width: 70%;
+        box-sizing: border-box;
     }
 
     .hero-text h1 {
         font-size: 2rem;
         line-height: 1.15;
         margin-bottom: 15px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        hyphens: auto;
+        max-width: 100%;
     }
 
     .hero-text p {
@@ -2233,8 +2275,7 @@ body {
     }
 
     .hero-stats {
-        gap: 15px;
-        padding: 15px 5px 0;
+        display: none;
     }
 
     .stat-item h3 {
@@ -2253,14 +2294,36 @@ body {
     }
 
     .phone-feature-tabs {
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        width: 100%;
         gap: 6px;
         padding: 6px 0;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scroll-behavior: smooth;
+    }
+
+    .phone-feature-tabs::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .phone-feature-tabs::-webkit-scrollbar-track {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 2px;
+    }
+
+    .phone-feature-tabs::-webkit-scrollbar-thumb {
+        background: rgba(255, 182, 217, 0.5);
+        border-radius: 2px;
     }
 
     .feature-tab {
         padding: 8px 12px;
         min-width: 80px;
         gap: 6px;
+        flex-shrink: 0;
         -webkit-tap-highlight-color: transparent;
         touch-action: manipulation;
     }
